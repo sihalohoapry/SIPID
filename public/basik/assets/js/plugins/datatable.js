@@ -4,7 +4,7 @@
   var init = function(){
     var table = $('#datatable').DataTable({
     	columnDefs: [
-	       { "orderable": false, "targets": 5 }
+	       { "orderable": false, "targets": 7 }
 	    ]
     });
     $('#datatable tbody').on( 'click', '.trash', function () {

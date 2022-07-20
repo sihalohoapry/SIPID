@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="{{ asset('basik/assets/css/bootstrap.css') }}" type="text/css" />
         <link rel="stylesheet" href="{{ asset('basik/assets/css/theme.css') }}" type="text/css" />
         <link rel="stylesheet" href="{{ asset('basik/assets/css/style.css') }}" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.css"/>
         <!-- endbuild -->
     </head>
     <body class="layout-row">
@@ -36,6 +37,9 @@
         <!-- Bootstrap -->
         <script src="{{ asset('basik/libs/popper.js/dist/umd/popper.min.js') }}"></script>
         <script src="{{ asset('basik/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+        
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.12.1/datatables.min.js"></script>
+        
         <!-- ajax page -->
         <script src="{{ asset('basik/libs/pjax/pjax.min.js') }}"></script>
         <script src="{{ asset('basik/assets/js/ajax.js') }}"></script>

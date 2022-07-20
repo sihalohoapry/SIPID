@@ -35,12 +35,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="table.style.html" class="">
+                                <a href="{{ route('index-progress-binamarga') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="table.bootstrap.html" class="">
+                                <a href="{{ route('index-hasil-binamarga') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
