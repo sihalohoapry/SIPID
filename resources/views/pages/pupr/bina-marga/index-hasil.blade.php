@@ -11,12 +11,12 @@
                     <div class="page-hero page-container " id="page-hero">
                         <div class="padding d-flex pt-0">
                             <div class="page-title">
-                                <h2 class="text-md text-highlight">Proses Kegiatan</h2>
+                                <h2 class="text-md text-highlight">Proses Kegiatan di Bidang Binamarga</h2>
                                 <small class="text-muted">Daftar list seluruh proses kegiatan</small>
                             </div>
                             <div class="flex"></div>
                             <div>
-                                <a href="" class="btn btn-md text-muted">
+                                <a href="{{ route('create-hasil-kegiatan', ["PUPR","Bina Marga"]) }}" class="btn btn-md text-muted">
                                     <span class="d-none d-sm-inline mx-1">Tambah Proses</span>
                                     <i data-feather="arrow-right"></i>
                                 </a>

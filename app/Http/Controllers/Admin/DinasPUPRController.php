@@ -46,6 +46,14 @@ class DinasPUPRController extends Controller
         }
         return view('pages.pupr.bina-marga.index-hasil');
     }
+
+    
+
+
+
+
+
+
     public function indexProgressBinaMarga(){
         return view('pages.pupr.bina-marga.index-progress');
     }

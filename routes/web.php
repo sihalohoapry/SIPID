@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DinasPUPRController;
+use App\Http\Controllers\Admin\GlobalController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,4 +26,5 @@ Route::match(["GET", "POST"], "/register", function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/bina-marga/hasil-kegiatan', [DinasPUPRController::class, 'indexHasilBinaMarga'])->name('index-hasil-binamarga');
+Route::get('/bina-marga/create-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createHasilKegiatan'])->name('create-hasil-kegiatan');
 Route::get('/bina-marga/progress-kegiatan', [DinasPUPRController::class, 'indexProgressBinaMarga'])->name('index-progress-binamarga');
