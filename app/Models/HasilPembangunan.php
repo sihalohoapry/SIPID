@@ -19,6 +19,8 @@ class HasilPembangunan extends Model
         'pagu',
         'tahun',
         'kecamatan',
+        'dinas',
+        'bidang',
     ];
 
     protected $hidden = [];

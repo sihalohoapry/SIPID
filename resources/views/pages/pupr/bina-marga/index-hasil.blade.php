@@ -16,7 +16,7 @@
                             </div>
                             <div class="flex"></div>
                             <div>
-                                <a href="{{ route('create-hasil-kegiatan', ["PUPR","Bina Marga"]) }}" class="btn btn-md text-muted">
+                                <a href="{{ route('create-hasil-kegiatan', ["pupr","binamarga"]) }}" class="btn btn-md text-muted">
                                     <span class="d-none d-sm-inline mx-1">Tambah Proses</span>
                                     <i data-feather="arrow-right"></i>
                                 </a>

@@ -22,7 +22,10 @@ class CreateHasilPembangunansTable extends Migration
             $table->double('pagu')->nullable();
             $table->string('tahun')->nullable();
             $table->string('kecamatan')->nullable();
+            $table->string('dinas')->nullable();
+            $table->string('bidang')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
