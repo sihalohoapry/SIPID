@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('title')
-    PUPR
+PUPR
 @endsection
 @push('addon-script')
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">
@@ -24,13 +24,13 @@
                     <div class="page-hero page-container " id="page-hero">
                         <div class="padding d-flex pt-0">
                             <div class="page-title">
-                                <h2 class="text-md text-highlight">Proses Kegiatan di Bidang Binamarga</h2>
-                                <small class="text-muted">Daftar list seluruh proses kegiatan</small>
+                                <h2 class="text-md text-highlight">Hasil Pembangunan di Bidang Binamarga</h2>
+                                <small class="text-muted">Daftar list seluruh hasil kegiatan</small>
                             </div>
                             <div class="flex"></div>
                             <div>
                                 <a href="{{ route('create-hasil-kegiatan', ["pupr","binamarga"]) }}" class="btn btn-md text-muted">
-                                    <span class="d-none d-sm-inline mx-1">Tambah Proses</span>
+                                    <span class="d-none d-sm-inline mx-1">Tambah Hasil</span>
                                     <i data-feather="arrow-right"></i>
                                 </a>
                             </div>

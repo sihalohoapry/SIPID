@@ -27,10 +27,16 @@ Route::match(["GET", "POST"], "/register", function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/bina-marga/create-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createHasilKegiatan'])->name('create-hasil-kegiatan');
+Route::get('/bina-marga/create-progres-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createProgresKegiatan'])->name('create-progres-kegiatan');
 Route::post('/bina-marga/post-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'postHasilKegiatan'])->name('post-hasil-kegiatan');
+Route::post('/bina-marga/post-progres-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'postProgresKegiatan'])->name('post-progres-kegiatan');
 
 Route::get('/bina-marga/hasil-kegiatan', [DinasPUPRController::class, 'indexHasilBinaMarga'])->name('index-hasil-binamarga');
 Route::get('/bina-marga/hasil-kegiatan/delete/{id}', [DinasPUPRController::class, 'deleteHasil'])->name('delete-hasil');
 Route::get('/bina-marga/edit-hasil-kegiatan/{id}', [DinasPUPRController::class, 'editHasil'])->name('edit-hasil');
 Route::put('/bina-marga/update-hasil-kegiatan/{id}', [DinasPUPRController::class, 'updateHasil'])->name('update-hasil');
+
 Route::get('/bina-marga/progress-kegiatan', [DinasPUPRController::class, 'indexProgressBinaMarga'])->name('index-progress-binamarga');
+Route::get('/bina-marga/progres-kegiatan/delete/{id}', [DinasPUPRController::class, 'deleteProgres'])->name('delete-progres');
+Route::get('/bina-marga/edit-progres-kegiatan/{id}', [DinasPUPRController::class, 'editProgres'])->name('edit-progres');
+Route::put('/bina-marga/update-progres-kegiatan/{id}', [DinasPUPRController::class, 'updateProgres'])->name('update-progres');

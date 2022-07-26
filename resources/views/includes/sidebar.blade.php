@@ -61,7 +61,7 @@
                             </li>
                             <li>
                                 <a href="table.bootstrap.html" class="">
-                                    <span class="nav-text">Hasil Permbangunan</span>
+                                    <span class="nav-text">Hasil Pembangunan</span>
                                 </a>
                             </li>
                            
