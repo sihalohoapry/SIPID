@@ -59,12 +59,12 @@
                                                         <input type="number" id="nilai_kontrak" name="nilai_kontrak" required class="form-control"">
                                                     </div>
                                                     <div class="form-group col-md-6">
-                                                        <label class="text-muted">Progres Fisik</label>
+                                                        <label class="text-muted">Progres Fisik(%)</label>
                                                         <input type="text" id="progres_fisik" name="progres_fisik" required class="form-control"">
                                                     </div>
                                                     <div class="form-group col-md-6">
                                                         <label class="text-muted">Progres Keunangan</label>
-                                                        <input type="text" id="progres_keuangan" name="progres_keuangan" required class="form-control"">
+                                                        <input type="number" id="progres_keuangan" name="progres_keuangan" required class="form-control"">
                                                     </div>
                                                     
                                                     <div class="form-group col-md-6">

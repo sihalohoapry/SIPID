@@ -4,6 +4,8 @@
 @endsection
 @section('content')
 <div id="content" class="flex ">
+    @include('alert.success')
+    @include('alert.failed')
                 <!-- ############ Main START-->
                 <div>
                     <div class="page-hero page-container " id="page-hero">

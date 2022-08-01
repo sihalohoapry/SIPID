@@ -60,7 +60,7 @@
                                                         <input type="number" id="nilai_kontrak" name="nilai_kontrak" value="{{ $data->nilai_kontrak }}" class="form-control"">
                                                     </div>
                                                     <div class="form-group col-md-6">
-                                                        <label class="text-muted">Progres Fisik</label>
+                                                        <label class="text-muted">Progres Fisik(%)</label>
                                                         <input type="text" id="progres_fisik" name="progres_fisik" value="{{ $data->progres_fisik }}" class="form-control"">
                                                     </div>
                                                     <div class="form-group col-md-6">

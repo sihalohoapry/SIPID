@@ -55,12 +55,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="table.style.html" class="">
+                                <a href="{{ route('index-progress-ciptakarya') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="table.bootstrap.html" class="">
+                                <a href="{{ route('index-hasil-ciptakarya') }}" class="">
                                     <span class="nav-text">Hasil Pembangunan</span>
                                 </a>
                             </li>
@@ -75,12 +75,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="table.style.html" class="">
+                                <a href="{{ route("index-progress-pengairan") }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="table.bootstrap.html" class="">
+                                <a href="{{ route("index-hasil-pengairan") }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>

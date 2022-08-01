@@ -27,7 +27,15 @@ class GlobalController extends Controller
         $data['bidang'] = $bidang;
 
         HasilPembangunan::create($data);
-        return redirect()->route('index-hasil-binamarga')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        if($bidang == "binamarga"){
+            return redirect()->route('index-hasil-binamarga')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "cipta-karya"){
+            return redirect()->route('index-hasil-ciptakarya')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "pengairan"){
+            return redirect()->route('index-hasil-pengairan')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
 
     }
     public function postProgresKegiatan(RequestProgresKegiatan $request, $dinas, $bidang ){
@@ -37,7 +45,15 @@ class GlobalController extends Controller
         $data['bidang'] = $bidang;
 
         ProgresKegiatan::create($data);
-        return redirect()->route('index-progress-binamarga')->with('status', 'Berhasil menambahkan progres pembangunan');
+        if($bidang == "binamarga"){
+            return redirect()->route('index-progress-binamarga')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "cipta-karya"){
+            return redirect()->route('index-progress-ciptakarya')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "pengairan"){
+            return redirect()->route('index-progress-pengairan')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
 
     }
 }
