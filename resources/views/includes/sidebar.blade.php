@@ -99,12 +99,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="table.style.html" class="">
+                                <a href="{{ route('index-progres-lalu-lintas') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="table.bootstrap.html" class="">
+                                <a href="{{ route('index-hasil-lalu-lintas') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -119,12 +119,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="table.style.html" class="">
+                                <a href="{{ route('index-progress-perairan') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="table.bootstrap.html" class="">
+                                <a href="{{ route('index-hasil-perairan') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -143,12 +143,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="table.style.html" class="">
+                                <a href="{{ route('index-progress-psp') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="table.bootstrap.html" class="">
+                                <a href="{{ route('index-hasil-psp') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -162,17 +162,17 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Perumahan & Petanahan</span>
+                            <span class="nav-text">Perumahan & Pertanahan</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="table.style.html" class="">
+                                <a href="{{ route('index-progress-perumahan-pertanahan') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="table.bootstrap.html" class="">
+                                <a href="{{ route('index-hasil-perumahan-pertanahan') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -187,12 +187,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="table.style.html" class="">
+                                <a href="{{ route('index-progress-plpp') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="table.bootstrap.html" class="">
+                                <a href="{{ route('index-hasil-plpp') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>

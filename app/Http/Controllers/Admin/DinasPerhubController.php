@@ -7,15 +7,15 @@ use App\Http\Requests\Admin\RequestHasilKegiatan;
 use App\Http\Requests\Admin\RequestProgresKegiatan;
 use App\Models\HasilPembangunan;
 use App\Models\ProgresKegiatan;
+use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
-
-class DinasPUPRController extends Controller
+class DinasPerhubController extends Controller
 {
-
-    public function indexHasilBinaMarga(){
+    //lalulintas
+    public function indexHasilLaluLintas(){
         if (request()->ajax()) {
-            $query = HasilPembangunan::query()->where(['dinas'=>"pupr", 'bidang'=>'binamarga']);
+            $query = HasilPembangunan::query()->where(['dinas'=>"perhubungan", 'bidang'=>'lalu-lintas']);
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {
@@ -46,12 +46,12 @@ class DinasPUPRController extends Controller
             ->rawColumns(['action'])
             ->make();
         }
-        return view('pages.pupr.bina-marga.index-hasil');
+        return view('pages.perhub.lalulintas.index-hasil');
     }
 
-    public function indexProgressBinaMarga(){
+    public function indexProgressLaluLintas(){
         if (request()->ajax()) {
-            $query = ProgresKegiatan::query()->where(['dinas'=>"pupr", 'bidang'=>'binamarga']);
+            $query = ProgresKegiatan::query()->where(['dinas'=>"perhubungan", 'bidang'=>'lalu-lintas']);
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {
@@ -82,13 +82,13 @@ class DinasPUPRController extends Controller
             ->rawColumns(['action'])
             ->make();
         }
-        return view('pages.pupr.bina-marga.index-progress');
+        return view('pages.perhub.lalulintas.index-progress');
     }
 
-    //PUPR=> Cipta karya
-    public function indexHasilCiptakarya(){
+    //perairan
+    public function indexHasilPerairan(){
         if (request()->ajax()) {
-            $query = HasilPembangunan::query()->where(['dinas'=>"pupr", 'bidang'=>'cipta-karya']);
+            $query = HasilPembangunan::query()->where(['dinas'=>"perhubungan", 'bidang'=>'perairan']);
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {
@@ -119,12 +119,12 @@ class DinasPUPRController extends Controller
             ->rawColumns(['action'])
             ->make();
         }
-        return view('pages.pupr.cipta-karya.index-hasil');
+        return view('pages.perhub.perairan.index-hasil');
     }
 
-    public function indexProgressCiptakarya(){
+    public function indexProgressPerairan(){
         if (request()->ajax()) {
-            $query = ProgresKegiatan::query()->where(['dinas'=>"pupr", 'bidang'=>'cipta-karya']);
+            $query = ProgresKegiatan::query()->where(['dinas'=>"perhubungan", 'bidang'=>'perairan']);
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {
@@ -155,83 +155,9 @@ class DinasPUPRController extends Controller
             ->rawColumns(['action'])
             ->make();
         }
-        return view('pages.pupr.cipta-karya.index-progress');
+        return view('pages.perhub.perairan.index-progress');
     }
 
-
-
-    //PUPR=> Perairan
-    public function indexHasilPengairan(){
-        if (request()->ajax()) {
-            $query = HasilPembangunan::query()->where(['dinas'=>"pupr", 'bidang'=>'pengairan']);
-
-            return DataTables::of($query)
-            ->addColumn('action', function ($item) {
-                return '
-                    <div class="btn-group">
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle mr-1 mb-1" 
-                                type="button" id="action' .  $item->id . '"
-                                    data-toggle="dropdown" 
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Aksi
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="action' .  $item->id . '">
-                                <a class="dropdown-item" href="' . route('edit-hasil', $item->id) . '">
-                                    Sunting
-                                </a>
-                                <a class="dropdown-item " onclick="return confirm(`Kamu yakin menghapus data ini?`)"
-                                href="' . route('delete-hasil', $item->id) . '">
-                                    Hapus
-                                </a>
-
-                                
-                            </div>
-                        </div>
-                </div>';
-            })
-            ->rawColumns(['action'])
-            ->make();
-        }
-        return view('pages.pupr.pengairan.index-hasil');
-    }
-
-    public function indexProgressPengairan(){
-        if (request()->ajax()) {
-            $query = ProgresKegiatan::query()->where(['dinas'=>"pupr", 'bidang'=>'pengairan']);
-
-            return DataTables::of($query)
-            ->addColumn('action', function ($item) {
-                return '
-                    <div class="btn-group">
-                        <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle mr-1 mb-1" 
-                                type="button" id="action' .  $item->id . '"
-                                    data-toggle="dropdown" 
-                                    aria-haspopup="true"
-                                    aria-expanded="false">
-                                    Aksi
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="action' .  $item->id . '">
-                                <a class="dropdown-item" href="' . route('edit-progres', $item->id) . '">
-                                    Sunting
-                                </a>
-                                <a class="dropdown-item " onclick="return confirm(`Kamu yakin menghapus data ini?`)"
-                                href="' . route('delete-progres', $item->id) . '">
-                                    Hapus
-                                </a>
-
-                                
-                            </div>
-                        </div>
-                </div>';
-            })
-            ->rawColumns(['action'])
-            ->make();
-        }
-        return view('pages.pupr.pengairan.index-progress');
-    }
 
     public function deleteHasil($id) {
         $data = HasilPembangunan::findOrFail($id);
@@ -251,14 +177,11 @@ class DinasPUPRController extends Controller
         $item = $request->all();
         $data = HasilPembangunan::findOrFail($id);
         $data->update($item);
-        if($data->bidang == "binamarga"){
+        if($data->bidang == "lalu-lintas"){
             return redirect()->route('index-hasil-binamarga')->with('status', 'Berhasil mengubah data');
         }
-        if($data->bidang == "cipta-karya"){
+        if($data->bidang == "perairan"){
             return redirect()->route('index-hasil-ciptakarya')->with('status', 'Berhasil mengubah data');
-        }
-        if($data->bidang == "pengairan"){
-            return redirect()->route('index-hasil-pengairan')->with('status', 'Berhasil mengubah data');
         }
     }
 
@@ -281,14 +204,11 @@ class DinasPUPRController extends Controller
         $item = $request->all();
         $data = ProgresKegiatan::findOrFail($id);
         $data->update($item);
-        if($data->bidang == "binamarga"){
+        if($data->bidang == "lalu-lintas"){
             return redirect()->route('index-progress-binamarga')->with('status', 'Berhasil mengubah data');
         }
-        if($data->bidang == "cipta-karya"){
+        if($data->bidang == "perairan"){
             return redirect()->route('index-progress-ciptakarya')->with('status', 'Berhasil mengubah data');
-        }
-        if($data->bidang == "pengairan"){
-            return redirect()->route('index-progress-pengairan')->with('status', 'Berhasil mengubah data');
         }
 
         

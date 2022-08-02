@@ -36,6 +36,21 @@ class GlobalController extends Controller
         if($bidang == "pengairan"){
             return redirect()->route('index-hasil-pengairan')->with('status', 'Berhasil menambahkan hasil pembangunan');
         }
+        if($bidang == "lalu-lintas"){
+            return redirect()->route('index-hasil-lalu-lintas')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "perairan"){
+            return redirect()->route('index-hasil-perairan')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "pengolahan-sampah-dan-pertamanan"){
+            return redirect()->route('index-hasil-psp')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "perumahan-pertanahan"){
+            return redirect()->route('index-hasil-perumahan-pertanahan')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "plpp"){
+            return redirect()->route('index-hasil-plpp')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
 
     }
     public function postProgresKegiatan(RequestProgresKegiatan $request, $dinas, $bidang ){
@@ -53,6 +68,21 @@ class GlobalController extends Controller
         }
         if($bidang == "pengairan"){
             return redirect()->route('index-progress-pengairan')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "lalu-lintas"){
+            return redirect()->route('index-progres-lalu-lintas')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "perairan"){
+            return redirect()->route('index-progress-perairan')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "pengolahan-sampah-dan-pertamanan"){
+            return redirect()->route('index-progress-psp')->with('status', 'Berhasil menambahkan hasil pembangunan');
+        }
+        if($bidang == "perumahan-pertanahan"){
+            return redirect()->route('index-progress-perumahan-pertanahan')->with('status', 'Berhasil mengubah data');
+        }
+        if($bidang == "plpp"){
+            return redirect()->route('index-progress-plpp')->with('status', 'Berhasil mengubah data');
         }
 
     }
