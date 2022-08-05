@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.user')
 @section('title')
     Dashboard
 @endsection
@@ -12,7 +12,7 @@
                                 <div class="page-title">
                                     <h2 class="text-md text-highlight">Dashboard</h2>
                                     <small class="text-muted">Selamat datang,
-                                        <strong>{{ Auth::user()->name }}</strong>
+                                        <strong>Berikut data - data progres dan hasil kegiatan di Kabupaten Tulang Bawang</strong>
                                     </small>
                                 </div>
                                 <div class="flex"></div>

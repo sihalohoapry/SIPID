@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/logo_a_project_dev.png">
+    <link rel="icon" href="images/logo_sipid.png">
     <title>SIPID</title>
 
     <!-- Swiper JS CSS-->
@@ -69,7 +69,7 @@
                         <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                                <img src="images/info.jpg" style=" max-width: 100%; 
+                                                <img src="images/mpp_tuba.jpg" style=" max-width: 100%; 
                                                 display:block; 
                                                 height: auto;" alt="" class="home-img">
 
@@ -128,21 +128,24 @@
 
                                 <div class="aboutImg-textBox">
                                         <i class='bx bx-heart heart-icon flex'></i>
-                                        <p class="content-description">Dinas Pekerjaan Umum dan Penataan Ruang</p>
+                                        <p class="content-description">DINAS PEKERJAAN UMUM DAN PENATAAN RUANG</p>
                                 </div>
                         </div>
 
                         <div class="about-details">
                                 <div class="about-text">
                                         <h4 class="content-subtitle"><i>Dinas PUPR</i></h4>
-                                        <p class="content-description">Dalam dinas ini terdapat 3 bidang yaitu <br>
-                                                bidang bina marga, bidang cipta karya dan bidang pengairan. <br>
-                                                pada setiap bidang, masing - masing memiliki 2 data yaitu Hasil Pembanguan dan Progres Kegiatan
+                                        <p class="content-description">
+                                                Mempunyai tugas melaksanakan Urusan Pemerintahan Daerah di bidang Pekerjaan Umum, memiliki 4 (empat) Bidang yaitu : <br>
+1.	Bidang Bina Marga <br>
+2.	Bidang Cipta Karya <br>
+3.	Bidang Pengairan <br>
+4.	Bidang Tata Ruang <br>
                                         </p>
                                 </div>
                                 <div style="margin-bottom: 0; !important">
-                                    <a href="#" class="about-link flex">
-                                            <span class="link-text">Detail Dinas</span>
+                                    <a href="{{ route('index-progress-binamarga-user') }}" class="about-link flex">
+                                            <span class="link-text">Data Dinas</span>
                                             <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
                                     </a>
                                 </div>
@@ -157,18 +160,20 @@
             <div class="about-content container">
                 <div class="about-details">
                     <div class="about-text">
-                            <h4 style="text-align: right" class="content-subtitle" ><i>Dinas Perumahan Rakyat dan Kawasan Permukiman</i></h4>
+                            <h4 style="text-align: right" class="content-subtitle" ><i>DINAS PERUMAHAN RAKYAT DAN KAWASAN PERMUKIMAN</i></h4>
                             <p style="text-align: right; color: white" class="content-description" >
-                                Dalam dinas ini terdapat 2 bidang yaitu <br>
-                                pertama Bidang Perumahan dan Petanahan
-                                Bidang Penyehatan dan yang kedua Lingkungan Perumahan dan Permukiman <br>
-                                                pada setiap bidang, masing - masing memiliki 2 data yaitu Hasil Pembanguan dan Progres Kegiatan
+                                Mempunyai tugas membantu bupati dalam melaksanakan Urusan Pemerintahan Daerah <br>
+                                berdasarkan asas otonomi di bidang Perumahan Rakyat dan Kawasan Permukiman <br>
+                                serta tugas pembantuan, memiliki 2 (dua) Bidang yaitu : <br>
+                                1.	Bidang Perumahan dan Pertanahan <br>
+                                2.	Bidang Penyehatan Lingkungan Perumahan dan Pemukiman <br>
+
                                         
                             </p>
                     </div>
                     <div style=" float: right; margin-bottom: 0; !important">
                         <a style=" float: right" href="#" class="about-link flex">
-                                <span style="color: white" class="link-text">Detail Dinas</span>
+                                <span style="color: white" class="link-text">Data Dinas</span>
                                 <i style="color: white" class='bx bx-right-arrow-alt about-arrowIcon'></i>
                         </a>
                     </div>
@@ -177,10 +182,7 @@
                 <div class="about-imageContent">
                     <img src="images/logo_tuba.png" style="height: auto" alt="" class="about-img">
 
-                    <div class="aboutImg-textBox">
-                            <i class='bx bx-heart heart-icon flex'></i>
-                            <p class="content-description">Dinas Perumahan Rakyat dan Kawasan Permukiman</p>
-                    </div>
+                    
                 </div>        
             </div>
         </section>
@@ -191,23 +193,25 @@
             <div class="about-imageContent">
                     <img src="images/lingkungan_hidup.png" style="height: auto"  alt="" class="about-img">
 
-                    <div class="aboutImg-textBox">
-                            <i class='bx bx-heart heart-icon flex'></i>
-                            <p class="content-description">Dinas Lingkungan Hidup Daerah</p>
-                    </div>
             </div>
 
             <div class="about-details">
                     <div class="about-text">
-                            <h4 class="content-subtitle"><i>Dinas DLHD</i></h4>
-                            <p class="content-description">Dalam dinas ini terdapat 1 bidang yaitu <br>
-                                Bidang Pengelolaan Sampah dan Pertamanan <br>
-                                dan memilik 2 data yaitu Hasil Pembanguan dan Progres Kegiatan
+                            <h4 class="content-subtitle"><i>DINAS LINGKUNGAN HIDUP</i></h4>
+                            <p class="content-description" style="text-align: left">
+                                Mempunyai tugas membantu Bupati dalam menyelenggarakan Pemerintahan Daerah <br>
+                                 di bidang Pengelolaan Lingkungan Hidup Daerah, <br>
+                                  memiliki 4 (empat) Bidang yaitu : <br>
+                                1.	Bidang Pengendalian, Pencemaran dan Kerusakan Lingkungan Hidup <br>
+                                2.	Bidang Tata Lingkungan <br>
+                                3.	Bidang Penataan Lingkungan <br> 
+                                4.	Bidang Pengelolaan Sampah dan Pertamanan <br>
+
                         </p>
                     </div>
                     <div style="margin-bottom: 0; !important">
                         <a href="#" class="about-link flex">
-                                <span class="link-text">Detail Dinas</span>
+                                <span class="link-text">Data Dinas</span>
                                 <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
                         </a>
                     </div>
@@ -223,15 +227,19 @@
                         <div class="about-text">
                                 <h4 style="text-align: right" class="content-subtitle" ><i>Dinas Perhubungan</i></h4>
                                 <p style="text-align: right; color: white" class="content-description" >
-                                    Dalam dinas ini terdapat 2 bidang yaitu <br>
-                                    Bidang Lalu Lintas dan Bidang Perairan <br>
-                                                    pada setiap bidang, masing - masing memiliki 2 data yaitu Hasil Pembanguan dan Progres Kegiatan
+                                        Mempunyai tugas melaksanakan Urusan Pemerintahan Daerah di Bidang Perhubungan <br>
+                                         berdasarkan asas otonomi dan Tugas Pembantuan serta tugas lain <br>
+                                          sesuai dengan kebijakan yang ditetapkan oleh <br> Bupati berdasarkan peraturan dan perundang-undangan yang berlaku, <br>
+                                           memiliki 2 (dua) Bidang yaitu : <br>
+                                        1.	Bidang Lalu Lintas dan Angkutan  <br>
+                                        2.	Bidang Perairan <br>
+                                        
                                             
                                 </p>
                         </div>
                     <div style="margin-bottom: 0; !important">
                         <a style=" float: right" href="#" class="about-link flex">
-                                <span style="color: white" class="link-text">Detail Dinas</span>
+                                <span style="color: white" class="link-text">Data Dinas</span>
                                 <i style="color: white" class='bx bx-right-arrow-alt about-arrowIcon'></i>
                         </a>
                     </div>

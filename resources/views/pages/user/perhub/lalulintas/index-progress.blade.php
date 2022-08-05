@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.user')
 @section('title')
 Dinas Perhubungan
 @endsection
@@ -24,7 +24,7 @@ Dinas Perhubungan
                     <div class="page-hero page-container " id="page-hero">
                         <div class="padding d-flex pt-0">
                             <div class="page-title">
-                                <h2 class="text-md text-highlight">Progres Kegiatan di Bidang Lalu Lintas</h2>
+                                <h2 class="text-md text-highlight">Data- Data Progres Kegiatan di Bidang Lalu Lintas</h2>
                                 <small class="text-muted">Daftar list seluruh proses kegiatan</small>
                             </div>
                             <div class="flex"></div>
@@ -39,7 +39,7 @@ Dinas Perhubungan
                     <div class="page-content page-container" id="page-content">
                         <div class="padding">
                             <div class="table-responsive">
-                                <table id="datatable" class="table table-theme table-row v-middle" >
+                                <table id="datatable" class="table table-theme table-row v-middle" style="text-align: left">
                                     <thead>
                                         <tr>
                                             <th><span class="text-muted">Nama Pekerjaan</span></th>
@@ -47,14 +47,11 @@ Dinas Perhubungan
                                             <th><span class="text-muted">Jenis</span></th>
                                             <th><span class="text-muted">Volume</span></th>
                                             <th><span class="text-muted">Sumber Dana</span></th>
-                                            <th><span class="text-muted">Nilai Pagu(Rp.)</span></th>
-                                            <th><span class="text-muted">Nilai Kontrak (Rp.)</span></th>
                                             <th><span class="text-muted">Progres Fisik</span></th>
                                             <th><span class="text-muted">Progres Keuangan</span></th>
                                             <th><span class="text-muted">bulan</span></th>
                                             <th><span class="text-muted">tahun</span></th>
                                             <th><span class="text-muted">Keterangan</span></th>
-                                            <th><span class="text-muted">Aksi</span></th>
                                             
                                         </tr>
                                     </thead>
@@ -82,51 +79,26 @@ Dinas Perhubungan
 <script>
     
     var datatable = $('#datatable').DataTable({
-            dom: 'lBfrtip',
-            buttons: [
-            {
-                extend: 'excelHtml5',
-                exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
-                }
-            },
-            {
-                extend: 'pdfHtml5',
-                exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
-                }
-            },
-        ],
-            // buttons: [
-            //         'excel', 'pdf', 'print'
-            //     ],
+           
             processing: true,
             serverSide:true,
             ordering:true,
+            scrollX:true,
             ajax:{
                 url: '{!! url()->current() !!}',
             },
             columns:[
-                {data:'nama_pekerjaan', name: 'nama_pekerjaan'},
-                {data:'lokasi', name: 'lokasi'},
-                {data:'jenis', name: 'jenis'},
+                {data:'nama_pekerjaan', name: 'nama_pekerjaan', "width": "400px"},
+                {data:'lokasi', name: 'lokasi', "width": "150px"},
+                {data:'jenis', name: 'jenis', "width": "150px"},
                 {data:'volume', name: 'volume'},
-                {data:'sumber_dana', name: 'sumber_dana'},
-                {data:'nilai_pagu', name: 'nilai_pagu'},
-                {data:'nilai_kontrak', name: 'nilai_kontrak'},
-                {data:'progres_fisik', name: 'progres_fisik'},
-                {data:'progres_keuangan', name: 'progres_keuangan'},
+                {data:'sumber_dana', name: 'sumber_dana', "width": "150px"},
+                {data:'progres_fisik', name: 'progres_fisik', "width": "150px"},
+                {data:'progres_keuangan', name: 'progres_keuangan', "width": "150px"},
                 {data:'bulan', name: 'bulan'},
                 {data:'tahun', name: 'tahun'},
-                {data:'keterangan', name: 'keterangan'},
+                {data:'keterangan', name: 'keterangan', "width": "200px"},
 
-                {
-                    data: 'action',
-                    name: 'action',
-                    orderable: false,
-                    searcable: false,
-                    width: '15%'
-                },
             ]
         });
         

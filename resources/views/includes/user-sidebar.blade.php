@@ -17,7 +17,7 @@
                         <span class="text-muted">Main</span>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="{{ route('user-dashboard') }}">
                             <span class="nav-icon text-primary"><i data-feather='home'></i></span>
                             <span class="nav-text">Dashboard</span>
                         </a>
@@ -27,19 +27,19 @@
                     </li>
                     
                     <li>
-                        <a href="#" class="">
+                        <a href="#" class="active">
                             <span class="nav-icon"><i data-feather='list'></i></span>
                             <span class="nav-text">Bina Marga</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="{{ route('index-progress-binamarga') }}" class="">
+                                <a href="{{ route('index-progress-binamarga-user') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('index-hasil-binamarga') }}" class="">
+                                <a href="{{ route('index-hasil-binamarga-user') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -54,12 +54,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="{{ route('index-progress-ciptakarya') }}" class="">
+                                <a href="{{ route('index-progress-ciptakarya-user') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('index-hasil-ciptakarya') }}" class="">
+                                <a href="{{ route('index-hasil-ciptakarya-user') }}" class="">
                                     <span class="nav-text">Hasil Pembangunan</span>
                                 </a>
                             </li>
@@ -74,12 +74,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="{{ route("index-progress-pengairan") }}" class="">
+                                <a href="{{ route("index-progress-pengairan-user") }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route("index-hasil-pengairan") }}" class="">
+                                <a href="{{ route("index-hasil-pengairan-user") }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -98,12 +98,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="{{ route('index-progres-lalu-lintas') }}" class="">
+                                <a href="{{ route('index-progress-lalu-lintas-user') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('index-hasil-lalu-lintas') }}" class="">
+                                <a href="{{ route('index-hasil-lalu-lintas-user') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -118,12 +118,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="{{ route('index-progress-perairan') }}" class="">
+                                <a href="{{ route('index-progress-perairan-user') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('index-hasil-perairan') }}" class="">
+                                <a href="{{ route('index-hasil-perairan-user') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -142,12 +142,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="{{ route('index-progress-psp') }}" class="">
+                                <a href="{{ route('index-progress-psp-user') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('index-hasil-psp') }}" class="">
+                                <a href="{{ route('index-hasil-psp-user') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -166,12 +166,12 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="{{ route('index-progress-perumahan-pertanahan') }}" class="">
+                                <a href="{{ route('index-progress-pp-user') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('index-hasil-perumahan-pertanahan') }}" class="">
+                                <a href="{{ route('index-hasil-pp-user') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -186,29 +186,17 @@
                         </a>
                         <ul class="nav-sub nav-mega">
                             <li>
-                                <a href="{{ route('index-progress-plpp') }}" class="">
+                                <a href="{{ route('index-progress-plpp-user') }}" class="">
                                     <span class="nav-text">Progres Kegiatan</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ route('index-hasil-plpp') }}" class="">
+                                <a href="{{ route('index-hasil-plpp-user') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
                            
                         </ul>
-                    </li>
-                    <li>
-                        <a  href="{{ route('logout') }}"
-                        onclick="event.preventDefault();
-                                      document.getElementById('logout-form').submit();">
-                         <span class="nav-icon text-success"><i data-feather='arrow-up-right'></i></span>
-                         <span class="nav-text">Keluar</span>
-                     </a>
-
-                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                         @csrf
-                     </form>
                     </li>
                     
                 </ul>
