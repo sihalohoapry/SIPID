@@ -17,7 +17,7 @@
                         <span class="text-muted">Main</span>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="/home">
                             <span class="nav-icon text-primary"><i data-feather='home'></i></span>
                             <span class="nav-text">Dashboard</span>
                         </a>
@@ -29,7 +29,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Bina Marga</span>
+                            <span class="nav-text {{ (request()->is('bina-marga*')) ? 'text-primary' : '' }} ">Bina Marga</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -49,7 +49,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Cipta Karya</span>
+                            <span class="nav-text {{ (request()->is('cipta-karya*')) ? 'text-primary' : '' }}">Cipta Karya</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -69,7 +69,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Pengairan</span>
+                            <span class="nav-text {{ (request()->is('pengairan*')) ? 'text-primary' : '' }}">Pengairan</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -93,7 +93,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Lalu Lintas</span>
+                            <span class="nav-text {{ (request()->is('lalu-lintas*')) ? 'text-primary' : '' }}">Lalu Lintas</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -113,7 +113,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Perairan</span>
+                            <span class="nav-text {{ (request()->is('perairan*')) ? 'text-primary' : '' }}">Perairan</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -137,7 +137,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Pengelolaan Sampah & Pertamanan</span>
+                            <span class="nav-text {{ (request()->is('psp*')) ? 'text-primary' : '' }}">Pengelolaan Sampah & Pertamanan</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -161,7 +161,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Perumahan & Pertanahan</span>
+                            <span class="nav-text {{ (request()->is('perumahan-pertanahan*')) ? 'text-primary' : '' }}">Perumahan & Pertanahan</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -181,7 +181,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">PLPP</span>
+                            <span class="nav-text {{ (request()->is('plpp*')) ? 'text-primary' : '' }}">PLPP</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">

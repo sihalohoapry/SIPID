@@ -18,6 +18,7 @@ class AdminSeeder extends Seeder
     {
         $user = new User();
         $user->name = "Admin";
+        $user->role = "ADMIN";
         $user->email = "admin-sipid@gmail.com";
         $user->password = Hash::make('secretpassword'); 
         $user->save();

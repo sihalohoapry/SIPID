@@ -29,7 +29,7 @@
                     <li>
                         <a href="#" class="active">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Bina Marga</span>
+                            <span class="nav-text {{ (request()->is('user/bina-marga*')) ? 'text-primary' : '' }}">Bina Marga</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -49,7 +49,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Cipta Karya</span>
+                            <span class="nav-text {{ (request()->is('user/cipta-karya*')) ? 'text-primary' : '' }}">Cipta Karya</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -69,7 +69,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Pengairan</span>
+                            <span class="nav-text {{ (request()->is('user/pengairan*')) ? 'text-primary' : '' }}">Pengairan</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -93,7 +93,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Lalu Lintas</span>
+                            <span class="nav-text {{ (request()->is('user/lalu-lintas*')) ? 'text-primary' : '' }}">Lalu Lintas</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -113,7 +113,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Perairan</span>
+                            <span class="nav-text {{ (request()->is('user/perairan*')) ? 'text-primary' : '' }}">Perairan</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -137,7 +137,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Pengelolaan Sampah & Pertamanan</span>
+                            <span class="nav-text {{ (request()->is('user/psp*')) ? 'text-primary' : '' }}">Pengelolaan Sampah & Pertamanan</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -161,7 +161,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">Perumahan & Pertanahan</span>
+                            <span class="nav-text {{ (request()->is('user/perumahan-pertanahan*')) ? 'text-primary' : '' }}">Perumahan & Pertanahan</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
@@ -181,7 +181,7 @@
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
-                            <span class="nav-text">PLPP</span>
+                            <span class="nav-text {{ (request()->is('user/plpp*')) ? 'text-primary' : '' }}">PLPP</span>
                             <span class="nav-caret"></span>
                         </a>
                         <ul class="nav-sub nav-mega">
