@@ -48,7 +48,7 @@ Dinas LH
                                             <th><span class="text-muted">Sumber Dana</span></th>
                                             <th><span class="text-muted">Pagu</span></th>
                                             <th><span class="text-muted">Tahun</span></th>
-                                            <th><span class="text-muted">kecamatan</span></th>
+                                            <th><span class="text-muted">Kecamatan</span></th>
                                             <th><span class="text-muted">Aksi</span></th>
                                             
                                         </tr>
@@ -87,6 +87,8 @@ Dinas LH
             },
             {
                 extend: 'pdfHtml5',
+                filename: 'data-progres-dlh-',
+                title:' SIPID | Dinas Lingkungan Hidup \n Data - data Hasil Kegiatan Bidang Pengelolaan Sampah & Pertamanan ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }

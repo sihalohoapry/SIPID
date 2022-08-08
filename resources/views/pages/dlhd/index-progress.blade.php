@@ -92,6 +92,8 @@ Dinas LH
             },
             {
                 extend: 'pdfHtml5',
+                filename: 'data-progres-dlh-',
+                title:' SIPID | Dinas Lingkungan Hidup \n Data - data Progres Kegiatan Bidang Pengelolaan Sampah & Pertamanan ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -106,8 +108,9 @@ Dinas LH
             ajax:{
                 url: '{!! url()->current() !!}',
             },
+            scrollX:true,
             columns:[
-                {data:'nama_pekerjaan', name: 'nama_pekerjaan'},
+                {data:'nama_pekerjaan', name: 'nama_pekerjaan',  "width": "400px"},
                 {data:'lokasi', name: 'lokasi'},
                 {data:'jenis', name: 'jenis'},
                 {data:'volume', name: 'volume'},

@@ -72,6 +72,7 @@ PUPR
 
 <script>
     
+    
     var datatable = $('#datatable').DataTable({
             processing: true,
             serverSide:true,

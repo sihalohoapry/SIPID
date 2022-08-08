@@ -80,7 +80,7 @@ PUPR
     <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
 
 <script>
-    
+    // $('#datatable').append('<caption style="caption-side: top">Data - data Progres Kegiatan bidang Bina Marga</caption>');
     var datatable = $('#datatable').DataTable({
             dom: 'lBfrtip',
             buttons: [
@@ -92,22 +92,25 @@ PUPR
             },
             {
                 extend: 'pdfHtml5',
+                // messageTop: 'Data - data Progres Kegiatan Bidang Bina Marga',
+
+                title: $('h1').html(),
+                filename: 'data-progres-puprbina-marga',
+                title:' SIPID | PUPR \n Data - data Progres Kegiatan Bidang Bina Marga ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
-                }
+                },
             },
         ],
-            // buttons: [
-            //         'excel', 'pdf', 'print'
-            //     ],
             processing: true,
             serverSide:true,
             ordering:true,
             ajax:{
                 url: '{!! url()->current() !!}',
             },
+            scrollX:true,
             columns:[
-                {data:'nama_pekerjaan', name: 'nama_pekerjaan'},
+                {data:'nama_pekerjaan', name: 'nama_pekerjaan',  "width": "400px"},
                 {data:'lokasi', name: 'lokasi'},
                 {data:'jenis', name: 'jenis'},
                 {data:'volume', name: 'volume'},

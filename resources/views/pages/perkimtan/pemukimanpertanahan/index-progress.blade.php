@@ -92,6 +92,8 @@ PUPR
             },
             {
                 extend: 'pdfHtml5',
+                filename: 'data-progres-perkim-perumahan-pertanahan',
+                title:' SIPID | PERKIM \n Data - data Progres Kegiatan Perumahan dan Pertahanan ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -106,8 +108,9 @@ PUPR
             ajax:{
                 url: '{!! url()->current() !!}',
             },
+            scrollX:true,
             columns:[
-                {data:'nama_pekerjaan', name: 'nama_pekerjaan'},
+                {data:'nama_pekerjaan', name: 'nama_pekerjaan',  "width": "400px"},
                 {data:'lokasi', name: 'lokasi'},
                 {data:'jenis', name: 'jenis'},
                 {data:'volume', name: 'volume'},

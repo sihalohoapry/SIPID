@@ -48,7 +48,7 @@ PUPR
                                             <th><span class="text-muted">Sumber Dana</span></th>
                                             <th><span class="text-muted">Pagu</span></th>
                                             <th><span class="text-muted">Tahun</span></th>
-                                            <th><span class="text-muted">kecamatan</span></th>
+                                            <th><span class="text-muted">Kecamatan</span></th>
                                             <th><span class="text-muted">Aksi</span></th>
                                             
                                         </tr>
@@ -87,6 +87,8 @@ PUPR
             },
             {
                 extend: 'pdfHtml5',
+                filename: 'data-progres-pupr-pengairan',
+                title:' SIPID | PUPR \n Data - data Hasil Pembangunan Bidang Pengairan ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }

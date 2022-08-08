@@ -41,7 +41,7 @@ Dinas PERKIMTAN
                                             <th><span class="text-muted">Volume</span></th>
                                             <th><span class="text-muted">Sumber Dana</span></th>
                                             <th><span class="text-muted">Tahun</span></th>
-                                            <th><span class="text-muted">kecamatan</span></th>
+                                            <th><span class="text-muted">Kecamatan</span></th>
                                             
                                         </tr>
                                     </thead>
@@ -76,12 +76,12 @@ Dinas PERKIMTAN
                 url: '{!! url()->current() !!}',
             },
             columns:[
-                {data:'kegiatan', name: 'kegiatan'},
-                {data:'jenis', name: 'jenis'},
-                {data:'volume', name: 'volume'},
+                {data:'kegiatan', name: 'kegiatan', "width": "400px"},
+                {data:'jenis', name: 'jenis', "width": "100px"},
+                {data:'volume', name: 'volume', "width": "100px"},
                 {data:'sumber_dana', name: 'sumber_dana'},
-                {data:'tahun', name: 'tahun'},
-                {data:'kecamatan', name: 'kecamatan'},
+                {data:'tahun', name: 'tahun', "width": "80px"},
+                {data:'kecamatan', name: 'kecamatan', "width": "100px"},
                
             ]
         });
