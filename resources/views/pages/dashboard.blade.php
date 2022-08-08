@@ -74,7 +74,7 @@
                                                         <i data-feather="list"></i>
                                                     </div>
                                                     <div class="px-4 flex">
-                                                        <div>DINAS DLHD</div>
+                                                        <div>DINAS Lingkungan Hidup</div>
                                                         <div class="text-success mt-2">
                                                             {{ $lhProgres }} Dokumen Progres
                                                         </div>
@@ -95,7 +95,7 @@
                                                         <i data-feather="list"></i>
                                                     </div>
                                                     <div class="px-4 flex">
-                                                        <div>DINAS PERKIMTAN</div>
+                                                        <div>DINAS PERKIM</div>
                                                         <div class="text-success mt-2">
                                                             {{ $perkimtanProgres }}  Dokumen Progres
                                                         </div>

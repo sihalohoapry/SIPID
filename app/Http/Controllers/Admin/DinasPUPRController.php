@@ -247,20 +247,20 @@ class DinasPUPRController extends Controller
         ]);
     }
 
-    public function updateHasil(RequestHasilKegiatan $request, $id){
-        $item = $request->all();
-        $data = HasilPembangunan::findOrFail($id);
-        $data->update($item);
-        if($data->bidang == "binamarga"){
-            return redirect()->route('index-hasil-binamarga')->with('status', 'Berhasil mengubah data');
-        }
-        if($data->bidang == "cipta-karya"){
-            return redirect()->route('index-hasil-ciptakarya')->with('status', 'Berhasil mengubah data');
-        }
-        if($data->bidang == "pengairan"){
-            return redirect()->route('index-hasil-pengairan')->with('status', 'Berhasil mengubah data');
-        }
-    }
+    // public function updateHasil(RequestHasilKegiatan $request, $id){
+    //     $item = $request->all();
+    //     $data = HasilPembangunan::findOrFail($id);
+    //     $data->update($item);
+    //     if($data->bidang == "binamarga"){
+    //         return redirect()->route('index-hasil-binamarga')->with('status', 'Berhasil mengubah data');
+    //     }
+    //     if($data->bidang == "cipta-karya"){
+    //         return redirect()->route('index-hasil-ciptakarya')->with('status', 'Berhasil mengubah data');
+    //     }
+    //     if($data->bidang == "pengairan"){
+    //         return redirect()->route('index-hasil-pengairan')->with('status', 'Berhasil mengubah data');
+    //     }
+    // }
 
 
     public function deleteProgres($id) {

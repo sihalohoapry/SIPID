@@ -131,7 +131,7 @@
                         </ul>
                     </li>
                     <li class="nav-header hidden-folded">
-                        <span class="text-muted">Dinas DLHD</span>
+                        <span class="text-muted">Dinas Lingkungan Hidup</span>
                     </li>
                     
                     <li>
@@ -155,7 +155,7 @@
                         </ul>
                     </li>
                     <li class="nav-header hidden-folded">
-                        <span class="text-muted">Dinas PERKIMTAN </span>
+                        <span class="text-muted">Dinas PERKIM </span>
                     </li>
                     
                     <li>

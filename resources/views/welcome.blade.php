@@ -33,10 +33,10 @@
                     <div class="menu-content">
                             <ul class="menu-list flex">
                                     <li><a href="#home" class="nav-link active-navlink">Home</a></li>
-                                    <li><a href="#about" class="nav-link">PUPR</a></li>
-                                    <li><a href="#menu" class="nav-link">PERHIM</a></li>
-                                    <li><a href="#review" class="nav-link">LK</a></li>
-                                    <li><a href="#perhubungan" class="nav-link">Perhubungan</a></li>
+                                    <li><a href="#PUPR" class="nav-link">PUPR</a></li>
+                                    <li><a href="#PERKIM" class="nav-link">PERKIM</a></li>
+                                    <li><a href="#DLH" class="nav-link">DLH</a></li>
+                                    <li><a href="#PERHUBUNGAN" class="nav-link">Perhubungan</a></li>
                             </ul>
 
                             <div class="media-icons flex">
@@ -121,7 +121,7 @@
 
     
 <!-- DINAS PUPR -->
-        <section class="section about" id="about">
+        <section class="section about" id="PUPR">
                 <div class="about-content container">
                         <div class="about-imageContent">
                                 <img src="images/pupr.jpg" alt="" class="about-img">
@@ -156,7 +156,7 @@
 
     
 <!-- DINAS PERHIM -->
-        <section class="section menu" id="menu">
+        <section class="section menu" id="PERKIM">
             <div class="about-content container">
                 <div class="about-details">
                     <div class="about-text">
@@ -172,7 +172,7 @@
                             </p>
                     </div>
                     <div style=" float: right; margin-bottom: 0; !important">
-                        <a style=" float: right" href="#" class="about-link flex">
+                        <a style=" float: right" href="{{ route('index-progress-pp-user') }}" class="about-link flex">
                                 <span style="color: white" class="link-text">Data Dinas</span>
                                 <i style="color: white" class='bx bx-right-arrow-alt about-arrowIcon'></i>
                         </a>
@@ -188,7 +188,7 @@
         </section>
 
 <!-- DINAS LINGKUNGAN HIDUP -->
-       <section class="section review" style="height: 100%"  id="review">
+       <section class="section review" style="height: 100%"  id="DLH">
         <div class="about-content container">
             <div class="about-imageContent">
                     <img src="images/lingkungan_hidup.png" style="height: auto"  alt="" class="about-img">
@@ -210,7 +210,7 @@
                         </p>
                     </div>
                     <div style="margin-bottom: 0; !important">
-                        <a href="#" class="about-link flex">
+                        <a href="{{ route('index-progress-psp-user') }}" class="about-link flex">
                                 <span class="link-text">Data Dinas</span>
                                 <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
                         </a>
@@ -221,7 +221,7 @@
         </section>
 
  <!-- DINAS PERHUBUNGAN -->
-        <section class="section menu" id="perhubungan">
+        <section class="section menu" id="PERHUBUNGAN">
             <div class="about-content container">
                 <div class="about-details">
                         <div class="about-text">
@@ -238,7 +238,7 @@
                                 </p>
                         </div>
                     <div style="margin-bottom: 0; !important">
-                        <a style=" float: right" href="#" class="about-link flex">
+                        <a style=" float: right" href="{{ route('index-progress-lalu-lintas-user') }}" class="about-link flex">
                                 <span style="color: white" class="link-text">Data Dinas</span>
                                 <i style="color: white" class='bx bx-right-arrow-alt about-arrowIcon'></i>
                         </a>
