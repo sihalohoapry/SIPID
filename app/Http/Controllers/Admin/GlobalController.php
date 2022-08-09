@@ -5,12 +5,25 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\RequestHasilKegiatan;
 use App\Http\Requests\Admin\RequestProgresKegiatan;
+use App\Imports\ProgresImport;
 use App\Models\HasilPembangunan;
 use App\Models\ProgresKegiatan;
 use Illuminate\Http\Request;
+use Excel;
 
 class GlobalController extends Controller
 {
+
+
+    public function importForm(){
+        return view('pages.import-data-progres');
+    }
+
+    public function importPost(Request $request) {
+        Excel::import(new ProgresImport, $request->data_progres);
+        return redirect()->back()->with('status', "Berhasil tambah data");
+    }
+
     public function createHasilKegiatan($dinas , $bidang){
         return view('pages.create-hasil-pembangunan',
         [ 'dinas' => $dinas, 'bidang' => $bidang ]);

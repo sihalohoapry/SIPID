@@ -28,6 +28,9 @@ Route::match(["GET", "POST"], "/register", function () {
     return redirect("/login");
 })->name("register");
 
+Route::get('/import-data-progres', [GlobalController::class,'importForm'])->name('import-data-progres')->middleware(['auth','admin']);
+Route::post('/post-data-progres', [GlobalController::class,'importPost'])->name('post-data-progres')->middleware(['auth','admin']);
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware(['auth','admin']);
 
 Route::put('/update-hasil-kegiatan/{id}', [GlobalController::class, 'updateHasil'])->name('update-hasil')->middleware(['auth','admin']);
