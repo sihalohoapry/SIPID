@@ -11,7 +11,7 @@
                     <div class="page-hero page-container " id="page-hero">
                         <div class="padding d-flex pt-0">
                             <div class="page-title">
-                                <h2 class="text-md text-highlight">Edit Hasil Kegiatan Dinas {{ $data->dinas }} Bidang {{ $data->bidang }}</h2>
+                                <h2 class="text-md text-highlight">Edit Hasil Pembangunan Dinas {{ $data->dinas }} Bidang {{ $data->bidang }}</h2>
                                 <small class="text-muted">Silahkan edit data dengan benar</small>
                             </div>
                         </div>

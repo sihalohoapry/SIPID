@@ -43,7 +43,7 @@
                                                     
                                                     <div class="form-group col-md-6">
                                                         <label class="text-muted">Volume</label>
-                                                        <input type="text" id="volume" name="volume" required class="form-control">
+                                                        <input type="text" id="volume" name="volume" class="form-control">
                                                     </div>
                                                     
                                                     <div class="form-group col-md-6">

@@ -24,7 +24,7 @@ PUPR
                     <div class="page-hero page-container " id="page-hero">
                         <div class="padding d-flex pt-0">
                             <div class="page-title">
-                                <h2 class="text-md text-highlight">Data - Data Progres Kegiatan di Bidang Binamarga</h2>
+                                <h2 class="text-md text-highlight">Data - Data Progres Kegiatan di Bidang Bina Marga</h2>
                                 <small class="text-muted">Daftar list seluruh proses kegiatan</small>
                             </div>
                             <div class="flex"></div>

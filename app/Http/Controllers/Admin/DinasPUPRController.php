@@ -158,8 +158,6 @@ class DinasPUPRController extends Controller
         return view('pages.pupr.cipta-karya.index-progress');
     }
 
-
-
     //PUPR=> Perairan
     public function indexHasilPengairan(){
         if (request()->ajax()) {
@@ -240,29 +238,6 @@ class DinasPUPRController extends Controller
 
     }
 
-    public function editHasil($id) {
-        $data = HasilPembangunan::findOrFail($id);
-        return view('pages.edit-hasil-pembangunan', [
-            'data'=> $data
-        ]);
-    }
-
-    // public function updateHasil(RequestHasilKegiatan $request, $id){
-    //     $item = $request->all();
-    //     $data = HasilPembangunan::findOrFail($id);
-    //     $data->update($item);
-    //     if($data->bidang == "binamarga"){
-    //         return redirect()->route('index-hasil-binamarga')->with('status', 'Berhasil mengubah data');
-    //     }
-    //     if($data->bidang == "cipta-karya"){
-    //         return redirect()->route('index-hasil-ciptakarya')->with('status', 'Berhasil mengubah data');
-    //     }
-    //     if($data->bidang == "pengairan"){
-    //         return redirect()->route('index-hasil-pengairan')->with('status', 'Berhasil mengubah data');
-    //     }
-    // }
-
-
     public function deleteProgres($id) {
         $data = ProgresKegiatan::findOrFail($id);
         $data->delete();
@@ -270,27 +245,4 @@ class DinasPUPRController extends Controller
 
     }
 
-    public function editProgres($id) {
-        $data = ProgresKegiatan::findOrFail($id);
-        return view('pages.edit-progres-pembangunan', [
-            'data'=> $data
-        ]);
-    }
-
-    public function updateProgres(RequestProgresKegiatan $request, $id){
-        $item = $request->all();
-        $data = ProgresKegiatan::findOrFail($id);
-        $data->update($item);
-        if($data->bidang == "binamarga"){
-            return redirect()->route('index-progress-binamarga')->with('status', 'Berhasil mengubah data');
-        }
-        if($data->bidang == "cipta-karya"){
-            return redirect()->route('index-progress-ciptakarya')->with('status', 'Berhasil mengubah data');
-        }
-        if($data->bidang == "pengairan"){
-            return redirect()->route('index-progress-pengairan')->with('status', 'Berhasil mengubah data');
-        }
-
-        
-    }
 }

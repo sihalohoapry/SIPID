@@ -9,7 +9,7 @@
                     <div class="page-hero page-container " id="page-hero">
                         <div class="padding d-flex pt-0">
                             <div class="page-title">
-                                <h2 class="text-md text-highlight">Tambah Hasil Kegiatan Dinas {{ $dinas }} Bidang {{ $bidang }}</h2>
+                                <h2 class="text-md text-highlight">Tambah Hasil Pembangunan Dinas {{ $dinas }} Bidang {{ $bidang }}</h2>
                                 <small class="text-muted">Silahkan Isi data dengan benar</small>
                             </div>
                         </div>

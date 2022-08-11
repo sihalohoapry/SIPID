@@ -28,7 +28,7 @@
                     <div class="page-hero page-container " id="page-hero">
                         <div class="padding d-flex pt-0">
                             <div class="page-title">
-                                <h2 class="text-md text-highlight">Import Data</h2>
+                                <h2 class="text-md text-highlight">Import Data Hasil</h2>
                                 <small class="text-muted">Pastikan data data di excel harus benar</small>
                             </div>
                         </div>
@@ -40,14 +40,14 @@
                                 <div class="col-md-12">
                                     <div class="card">
                                         <div class="card-body">
-                                            <form action="{{ route('post-data-progres') }}" method="POST" enctype="multipart/form-data">
+                                            <form action="{{ route('post-data-hasil') }}" method="POST" enctype="multipart/form-data">
                                                 @csrf
                                                 <div class="form-row">
                                                     <div class="form-group custom-file">
                                                         {{-- <div class="form-group"> --}}
                                                             <label>File</label>
-                                                            <input type="file" name="data_progres" class="form-control" required
-                                                                placeholder="data_progres">
+                                                            <input type="file" name="data_hasil" class="form-control" required
+                                                                placeholder="data_hasil">
                                                         {{-- </div> --}}
                                                         {{-- <input type="file" class="custom-file-input" id="thumbnail">
                                                         <label class="custom-file-label" for="thumbnail">Pilih Thumbnail</label> --}}
