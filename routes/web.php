@@ -43,6 +43,10 @@ Route::put('/update-progres-kegiatan/{id}', [GlobalController::class, 'updatePro
 
 
 //PUPR => Bina Marga
+
+Route::get('/semua-bidang-pupr/index-progress-semua', [DinasPUPRController::class, 'allPupr'])->name('all-pupr-progres')->middleware(['auth','admin']);
+Route::get('/semua-bidang-pupr/index-hasil-semua', [DinasPUPRController::class, 'allPuprHasil'])->name('all-pupr-hasil')->middleware(['auth','admin']);
+
 Route::get('/bina-marga/create-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createHasilKegiatan'])->name('create-hasil-kegiatan')->middleware(['auth','admin']);
 Route::get('/bina-marga/create-progres-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createProgresKegiatan'])->name('create-progres-kegiatan')->middleware(['auth','admin']);
 Route::post('/bina-marga/post-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'postHasilKegiatan'])->name('post-hasil-kegiatan')->middleware(['auth','admin']);
@@ -58,6 +62,7 @@ Route::get('/bina-marga/progres-kegiatan/delete/{id}', [DinasPUPRController::cla
 
 
 //PUPR => cipta karya
+
 Route::get('/cipta-karya/create-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createHasilKegiatan'])->name('create-hasil-kegiatan-ciptakarya')->middleware(['auth','admin']);
 Route::get('/cipta-karya/create-progres-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createProgresKegiatan'])->name('create-progres-kegiatan-ciptakarya')->middleware(['auth','admin']);
 Route::post('/cipta-karya/post-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'postHasilKegiatan'])->name('post-hasil-kegiatan-ciptakarya')->middleware(['auth','admin']);
@@ -83,6 +88,8 @@ Route::get('/pengairan/progres-kegiatan/delete/{id}', [DinasPUPRController::clas
 
 
 //PERHUBUNGAN => LALU LINTAS
+Route::get('/semua-bidang-dishub/index-progress-semua', [DinasPerhubController::class, 'allDishub'])->name('all-dishub-progres')->middleware(['auth','admin']);
+Route::get('/semua-bidang-dishub/index-hasil-semua', [DinasPerhubController::class, 'allDishubHasil'])->name('all-dishub-hasil')->middleware(['auth','admin']);
 Route::get('/lalu-lintas/create-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createHasilKegiatan'])->name('create-hasil-kegiatan-lalu-lintas')->middleware(['auth','admin']);
 Route::get('/lalu-lintas/create-progres-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createProgresKegiatan'])->name('create-progres-kegiatan-lalu-lintas')->middleware(['auth','admin']);
 Route::post('/lalu-lintas/post-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'postHasilKegiatan'])->name('post-hasil-kegiatan-lalu-lintas')->middleware(['auth','admin']);
@@ -120,6 +127,9 @@ Route::get('/psp/progress-kegiatan', [DinasDLHDController::class, 'indexProgress
 Route::get('/psp/progres-kegiatan/delete/{id}', [DinasDLHDController::class, 'deleteProgres'])->name('delete-progres')->middleware(['auth','admin']);
 
 //PERKIMTAN => perumahan-pertanahan
+Route::get('/semua-bidang-perkim/index-progress-semua', [DinasPerkimtanController::class, 'allPerkim'])->name('all-perkim-progres')->middleware(['auth','admin']);
+Route::get('/semua-bidang-perkim/index-hasil-semua', [DinasPerkimtanController::class, 'allPerkimHasil'])->name('all-perkim-hasil')->middleware(['auth','admin']);
+
 Route::get('/perumahan-pertanahan/create-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createHasilKegiatan'])->name('create-hasil-kegiatan')->middleware(['auth','admin']);
 Route::get('/perumahan-pertanahan/create-progres-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'createProgresKegiatan'])->name('create-progres-kegiatan')->middleware(['auth','admin']);
 Route::post('/perumahan-pertanahan/post-hasil-kegiatan/{dinas}/{bidang}', [GlobalController::class, 'postHasilKegiatan'])->name('post-hasil-kegiatan')->middleware(['auth','admin']);

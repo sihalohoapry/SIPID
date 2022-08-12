@@ -5,6 +5,8 @@
         <title>SIPID | @yield('title')</title>
         <meta name="description" content="Responsive, Bootstrap, BS4" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="icon" href="{{ asset('images/logo_sipid.png') }}">
+
         <!-- style -->
         <!-- build:css ../dashboard/css/site.min.css -->
         <link rel="stylesheet" href="{{ asset('basik/assets/css/bootstrap.css') }}" type="text/css" />

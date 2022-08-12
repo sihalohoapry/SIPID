@@ -48,6 +48,41 @@ class DinasPUPRController extends Controller
         }
         return view('pages.pupr.bina-marga.index-hasil');
     }
+    public function allPuprHasil(){
+        if (request()->ajax()) {
+            $query = HasilPembangunan::query()->where('dinas', "pupr");
+
+            return DataTables::of($query)
+            ->addColumn('action', function ($item) {
+                return '
+                    <div class="btn-group">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle mr-1 mb-1" 
+                                type="button" id="action' .  $item->id . '"
+                                    data-toggle="dropdown" 
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Aksi
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="action' .  $item->id . '">
+                                <a class="dropdown-item" href="' . route('edit-hasil', $item->id) . '">
+                                    Sunting
+                                </a>
+                                <a class="dropdown-item " onclick="return confirm(`Kamu yakin menghapus data ini?`)"
+                                href="' . route('delete-hasil', $item->id) . '">
+                                    Hapus
+                                </a>
+
+                                
+                            </div>
+                        </div>
+                </div>';
+            })
+            ->rawColumns(['action'])
+            ->make();
+        }
+        return view('pages.index-hasil');
+    }
 
     public function indexProgressBinaMarga(){
         if (request()->ajax()) {
@@ -83,6 +118,41 @@ class DinasPUPRController extends Controller
             ->make();
         }
         return view('pages.pupr.bina-marga.index-progress');
+    }
+    public function allPupr(){
+        if (request()->ajax()) {
+            $query = ProgresKegiatan::query()->where('dinas', "pupr")->SortByDesc('name');
+
+            return DataTables::of($query)
+            ->addColumn('action', function ($item) {
+                return '
+                    <div class="btn-group">
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle mr-1 mb-1" 
+                                type="button" id="action' .  $item->id . '"
+                                    data-toggle="dropdown" 
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Aksi
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="action' .  $item->id . '">
+                                <a class="dropdown-item" href="' . route('edit-progres', $item->id) . '">
+                                    Sunting
+                                </a>
+                                <a class="dropdown-item " onclick="return confirm(`Kamu yakin menghapus data ini?`)"
+                                href="' . route('delete-progres', $item->id) . '">
+                                    Hapus
+                                </a>
+
+                                
+                            </div>
+                        </div>
+                </div>';
+            })
+            ->rawColumns(['action'])
+            ->make();
+        }
+        return view('pages.index-progress');
     }
 
     //PUPR=> Cipta karya

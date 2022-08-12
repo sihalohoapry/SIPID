@@ -25,7 +25,7 @@
                     <li class="nav-header hidden-folded">
                         <span class="text-muted">Dinas PUPR</span>
                     </li>
-                    
+                    {{-- binamarga --}}
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
@@ -46,6 +46,7 @@
                            
                         </ul>
                     </li>
+                    {{-- ciptakarya --}}
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
@@ -66,6 +67,7 @@
                            
                         </ul>
                     </li>
+                    {{-- pengairan --}}
                     <li>
                         <a href="#" class="">
                             <span class="nav-icon"><i data-feather='list'></i></span>
@@ -80,6 +82,27 @@
                             </li>
                             <li>
                                 <a href="{{ route("index-hasil-pengairan") }}" class="">
+                                    <span class="nav-text">Hasil Permbangunan</span>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    {{-- semua dinas --}}
+                    <li>
+                        <a href="#" class="">
+                            <span class="nav-icon"><i data-feather='list'></i></span>
+                            <span class="nav-text {{ (request()->is('semua-bidang-pupr*')) ? 'text-primary' : '' }}">Semua Bidang</span>
+                            <span class="nav-caret"></span>
+                        </a>
+                        <ul class="nav-sub nav-mega">
+                            <li>
+                                <a href="{{ route("all-pupr-progres") }}" class="">
+                                    <span class="nav-text">Progres Kegiatan</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route("all-pupr-hasil") }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
@@ -130,6 +153,28 @@
                            
                         </ul>
                     </li>
+                    <li>
+                        <a href="#" class="">
+                            <span class="nav-icon"><i data-feather='list'></i></span>
+                            <span class="nav-text {{ (request()->is('semua-bidang-dishub*')) ? 'text-primary' : '' }}">Semua Bidang</span>
+                            <span class="nav-caret"></span>
+                        </a>
+                        <ul class="nav-sub nav-mega">
+                            <li>
+                                <a href="{{ route('all-dishub-progres') }}" class="">
+                                    <span class="nav-text">Progres Kegiatan</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('all-dishub-hasil') }}" class="">
+                                    <span class="nav-text">Hasil Permbangunan</span>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+
+
                     <li class="nav-header hidden-folded">
                         <span class="text-muted">Dinas Lingkungan Hidup</span>
                     </li>
@@ -192,6 +237,26 @@
                             </li>
                             <li>
                                 <a href="{{ route('index-hasil-plpp') }}" class="">
+                                    <span class="nav-text">Hasil Permbangunan</span>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <span class="nav-icon"><i data-feather='list'></i></span>
+                            <span class="nav-text {{ (request()->is('semua-bidang-perkim*')) ? 'text-primary' : '' }}">Semua Bidang</span>
+                            <span class="nav-caret"></span>
+                        </a>
+                        <ul class="nav-sub nav-mega">
+                            <li>
+                                <a href="{{ route('all-perkim-progres') }}" class="">
+                                    <span class="nav-text">Progres Kegiatan</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('all-perkim-hasil') }}" class="">
                                     <span class="nav-text">Hasil Permbangunan</span>
                                 </a>
                             </li>
