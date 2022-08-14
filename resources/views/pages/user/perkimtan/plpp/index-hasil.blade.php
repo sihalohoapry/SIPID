@@ -69,6 +69,23 @@ Dinas PERKIMTAN
 <script>
     
     var datatable = $('#datatable').DataTable({
+        dom: 'lBfrtip',
+            buttons: [
+            {
+                extend: 'excelHtml5',
+                exportOptions: {
+                    columns: [ 0, 1, 2,3,4, 5]
+                }
+            },
+            {
+                extend: 'pdfHtml5',
+                filename: 'data-progres-perkim-plpp',
+                title:' SIPID | PERKIM \n Data - data Hasil Pembangunan Penyehatan Lingkungan Perumahan dan Pemukiman ',
+                exportOptions: {
+                    columns: [ 0, 1, 2,3,4, 5]
+                }
+            },
+        ],
             processing: true,
             serverSide:true,
             ordering:true,

@@ -74,7 +74,23 @@ Dinas Lingkungan Hidup
 <script>
     
     var datatable = $('#datatable').DataTable({
-            
+        dom: 'lBfrtip',
+            buttons: [
+            {
+                extend: 'excelHtml5',
+                exportOptions: {
+                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                }
+            },
+            {
+                extend: 'pdfHtml5',
+                filename: 'data-progres-dlh-',
+                title:' SIPID | Dinas Lingkungan Hidup \n Data - data Progres Kegiatan Bidang Pengelolaan Sampah & Pertamanan ',
+                exportOptions: {
+                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                }
+            },
+        ],
             processing: true,
             serverSide:true,
             ordering:true,

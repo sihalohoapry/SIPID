@@ -79,7 +79,23 @@ Dinas Perhubungan
 <script>
     
     var datatable = $('#datatable').DataTable({
-           
+        dom: 'lBfrtip',
+            buttons: [
+            {
+                extend: 'excelHtml5',
+                exportOptions: {
+                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                }
+            },
+            {
+                extend: 'pdfHtml5',
+                filename: 'data-progres-perhub-lalu-lintas',
+                title:' SIPID | PERHUB \n Data - data Progres Kegiatan Bidang Lalu Lintas ',
+                exportOptions: {
+                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                }
+            },
+        ],
             processing: true,
             serverSide:true,
             ordering:true,

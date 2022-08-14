@@ -69,6 +69,24 @@ PUPR
 <script>
     
     var datatable = $('#datatable').DataTable({
+        dom: 'lBfrtip',
+            buttons: [
+            {
+                extend: 'excelHtml5',
+                exportOptions: {
+                    columns: [ 0, 1, 2,3,4, 5 ]
+                }
+            },
+            {
+                extend: 'pdfHtml5',
+                title: $('h1').html(),
+                filename: 'data-hasil-puprbina-marga',
+                title:' SIPID | PUPR \n Data - data Hasil Pembangunan Bidang Bina Marga ',
+                exportOptions: {
+                    columns: [ 0, 1, 2,3,4, 5 ]
+                }
+            },
+        ],
             processing: true,
             serverSide:true,
             ordering:true,

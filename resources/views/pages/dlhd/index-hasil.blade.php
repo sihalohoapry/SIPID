@@ -93,7 +93,7 @@ Dinas LH
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
             },
-        ],
+            ],
             // buttons: [
             //         'excel', 'pdf', 'print'
             //     ],
