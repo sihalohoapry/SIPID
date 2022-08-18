@@ -76,6 +76,8 @@ Dinas Lingkungan Hidup
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-dlh-',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENGELOLAAN SAMPAH & PERTAMANAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5, ]
                 }
@@ -83,7 +85,7 @@ Dinas Lingkungan Hidup
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-dlh-',
-                title:' SIPID | Dinas Lingkungan Hidup \n Data - data Hasil Kegiatan Bidang Pengelolaan Sampah & Pertamanan ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENGELOLAAN SAMPAH & PERTAMANAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4,5, ]
                 }

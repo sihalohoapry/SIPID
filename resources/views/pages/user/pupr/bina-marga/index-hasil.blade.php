@@ -73,6 +73,8 @@ PUPR
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-hasil-puprbina-marga',
+                title:' DATA HASIL PEMBANGUNAN BIDANG BINA MARGA ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5 ]
                 }
@@ -81,7 +83,7 @@ PUPR
                 extend: 'pdfHtml5',
                 title: $('h1').html(),
                 filename: 'data-hasil-puprbina-marga',
-                title:' SIPID | PUPR \n Data - data Hasil Pembangunan Bidang Bina Marga ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG BINA MARGA ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5 ]
                 }

@@ -121,7 +121,7 @@ class DinasPUPRController extends Controller
     }
     public function allPupr(){
         if (request()->ajax()) {
-            $query = ProgresKegiatan::query()->where('dinas', "pupr")->SortByDesc('name');
+            $query = ProgresKegiatan::query()->where('dinas', "pupr");
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {

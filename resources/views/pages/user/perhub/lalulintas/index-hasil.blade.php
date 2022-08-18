@@ -74,6 +74,8 @@ Dinas Perhubungan
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-perhub-lalu-lintas',
+                title:' DATA HASIL PEMBANGUNAN BIDANG LALU LINTAS ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5 ]
                 }
@@ -81,7 +83,7 @@ Dinas Perhubungan
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-perhub-lalu-lintas',
-                title:' SIPID | PERHUB \n Data - data Hasil Pembangunan Bidang Lalu Lintas ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG LALU LINTAS ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5 ]
                 }

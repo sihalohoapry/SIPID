@@ -81,6 +81,8 @@ PUPR
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-pupr-pengairan',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENGAIRAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -88,7 +90,7 @@ PUPR
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-pupr-pengairan',
-                title:' SIPID | PUPR \n Data - data Hasil Pembangunan Bidang Pengairan ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENGAIRAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -108,7 +110,7 @@ PUPR
                 {data:'jenis', name: 'jenis'},
                 {data:'volume', name: 'volume'},
                 {data:'sumber_dana', name: 'sumber_dana'},
-                {data:'pagu', name: 'pagu'},
+                {data:'pagu', name: 'pagu', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
                 {data:'tahun', name: 'tahun'},
                 {data:'kecamatan', name: 'kecamatan'},
                 {

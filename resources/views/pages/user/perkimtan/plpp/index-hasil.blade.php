@@ -73,6 +73,8 @@ Dinas PERKIMTAN
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-perkim-plpp',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENYEHATAN LINGKUNGAN PERUMAHAN DAN PERMUKIMAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5]
                 }
@@ -80,7 +82,7 @@ Dinas PERKIMTAN
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-perkim-plpp',
-                title:' SIPID | PERKIM \n Data - data Hasil Pembangunan Penyehatan Lingkungan Perumahan dan Pemukiman ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENYEHATAN LINGKUNGAN PERUMAHAN DAN PERMUKIMAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5]
                 }

@@ -73,6 +73,8 @@ PUPR
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-pupr-pengairan',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENGAIRAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5 ]
                 }
@@ -80,7 +82,7 @@ PUPR
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-pupr-pengairan',
-                title:' SIPID | PUPR \n Data - data Hasil Pembangunan Bidang Pengairan ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENGAIRAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5 ]
                 }

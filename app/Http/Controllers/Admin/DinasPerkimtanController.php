@@ -16,7 +16,7 @@ class DinasPerkimtanController extends Controller
     // all
     public function allPerkimHasil(){
         if (request()->ajax()) {
-            $query = HasilPembangunan::query()->where('dinas', "perkimtan");
+            $query = HasilPembangunan::query()->where('dinas', "perkim");
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {
@@ -52,7 +52,7 @@ class DinasPerkimtanController extends Controller
 
     public function allPerkim(){
         if (request()->ajax()) {
-            $query = ProgresKegiatan::query()->where('dinas', "perkimtan");
+            $query = ProgresKegiatan::query()->where('dinas', "perkim");
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {
@@ -89,7 +89,7 @@ class DinasPerkimtanController extends Controller
     //perumahan dan pertanahan
     public function indexHasilPerumahanPertanahan(){
         if (request()->ajax()) {
-            $query = HasilPembangunan::query()->where(['dinas'=>"perkimtan", 'bidang'=>'perumahan-pertanahan']);
+            $query = HasilPembangunan::query()->where(['dinas'=>"perkim", 'bidang'=>'perumahan-pertanahan']);
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {
@@ -120,12 +120,12 @@ class DinasPerkimtanController extends Controller
             ->rawColumns(['action'])
             ->make();
         }
-        return view('pages.perkimtan.pemukimanpertanahan.index-hasil');
+        return view('pages.perkim.pemukimanpertanahan.index-hasil');
     }
 
     public function indexProgressPerumahanPertanahan(){
         if (request()->ajax()) {
-            $query = ProgresKegiatan::query()->where(['dinas'=>"perkimtan", 'bidang'=>'perumahan-pertanahan']);
+            $query = ProgresKegiatan::query()->where(['dinas'=>"perkim", 'bidang'=>'perumahan-pertanahan']);
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {
@@ -156,12 +156,12 @@ class DinasPerkimtanController extends Controller
             ->rawColumns(['action'])
             ->make();
         }
-        return view('pages.perkimtan.pemukimanpertanahan.index-progress');
+        return view('pages.perkim.pemukimanpertanahan.index-progress');
     }
     //plpp
     public function indexHasilPLPP(){
         if (request()->ajax()) {
-            $query = HasilPembangunan::query()->where(['dinas'=>"perkimtan", 'bidang'=>'plpp']);
+            $query = HasilPembangunan::query()->where(['dinas'=>"perkim", 'bidang'=>'plpp']);
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {
@@ -192,12 +192,12 @@ class DinasPerkimtanController extends Controller
             ->rawColumns(['action'])
             ->make();
         }
-        return view('pages.perkimtan.plpp.index-hasil');
+        return view('pages.perkim.plpp.index-hasil');
     }
 
     public function indexProgressPLPP(){
         if (request()->ajax()) {
-            $query = ProgresKegiatan::query()->where(['dinas'=>"perkimtan", 'bidang'=>'plpp']);
+            $query = ProgresKegiatan::query()->where(['dinas'=>"perkim", 'bidang'=>'plpp']);
 
             return DataTables::of($query)
             ->addColumn('action', function ($item) {
@@ -228,7 +228,7 @@ class DinasPerkimtanController extends Controller
             ->rawColumns(['action'])
             ->make();
         }
-        return view('pages.perkimtan.plpp.index-progress');
+        return view('pages.perkim.plpp.index-progress');
     }
 
 

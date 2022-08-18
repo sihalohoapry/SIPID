@@ -73,6 +73,8 @@ Dinas PERKIMTAN
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-perkim-perumahan-pertanahan',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PERUMAHAN DAN PERTAHANAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5]
                 }
@@ -80,7 +82,7 @@ Dinas PERKIMTAN
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-perkim-perumahan-pertanahan',
-                title:' SIPID | PERKIM \n Data - data Hasil Pembangunan Perumahan dan Pertahanan ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PERUMAHAN DAN PERTAHANAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5]
                 }

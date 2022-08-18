@@ -86,6 +86,8 @@ PUPR
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-pupr-cipta-karya',
+                title:' DATA HASIL PROGRES KEGIATAN BIDANG CIPTA KARYA ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -93,7 +95,7 @@ PUPR
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-pupr-cipta-karya',
-                title:' SIPID | PUPR \n Data - data Progres Kegiatan Bidang Cipta Karya ',
+                title:' DATA HASIL PROGRES KEGIATAN BIDANG CIPTA KARYA ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -115,10 +117,10 @@ PUPR
                 {data:'jenis', name: 'jenis'},
                 {data:'volume', name: 'volume'},
                 {data:'sumber_dana', name: 'sumber_dana'},
-                {data:'nilai_pagu', name: 'nilai_pagu'},
-                {data:'nilai_kontrak', name: 'nilai_kontrak'},
+                {data:'nilai_pagu', name: 'nilai_pagu', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
+                {data:'nilai_kontrak', name: 'nilai_kontrak', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
                 {data:'progres_fisik', name: 'progres_fisik'},
-                {data:'progres_keuangan', name: 'progres_keuangan'},
+                {data:'progres_keuangan', name: 'progres_keuangan', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
                 {data:'bulan', name: 'bulan'},
                 {data:'tahun', name: 'tahun'},
                 {data:'keterangan', name: 'keterangan'},

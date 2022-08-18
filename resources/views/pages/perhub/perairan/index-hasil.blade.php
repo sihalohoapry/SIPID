@@ -81,6 +81,8 @@ Dinas Perhubungan
             buttons: [
             {
                 extend: 'excelHtml5',
+                ilename: 'data-progres-perhub-perairan',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PERAIRAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -88,7 +90,7 @@ Dinas Perhubungan
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-perhub-perairan',
-                title:' SIPID | PERHUB \n Data - data Hasil Pembangunan Bidang Perairan ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PERAIRAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -108,7 +110,7 @@ Dinas Perhubungan
                 {data:'jenis', name: 'jenis'},
                 {data:'volume', name: 'volume'},
                 {data:'sumber_dana', name: 'sumber_dana'},
-                {data:'pagu', name: 'pagu'},
+                {data:'pagu', name: 'pagu', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
                 {data:'tahun', name: 'tahun'},
                 {data:'kecamatan', name: 'kecamatan'},
                 {

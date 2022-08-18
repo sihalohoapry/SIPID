@@ -20,8 +20,8 @@ class IndexDataController extends Controller
         $perhubunganHasil = HasilPembangunan::where('dinas', 'perhubungan')->count();
         $lhProgres = ProgresKegiatan::where('dinas', 'dinas-lingkungan-hidup')->count();
         $lhHasil = HasilPembangunan::where('dinas', 'dinas-lingkungan-hidup')->count();
-        $perkimtanProgres = ProgresKegiatan::where('dinas', 'perkimtan')->count();
-        $perkimtanHasil = HasilPembangunan::where('dinas', 'perkimtan')->count();
+        $perkimtanProgres = ProgresKegiatan::where('dinas', 'perkim')->count();
+        $perkimtanHasil = HasilPembangunan::where('dinas', 'perkim')->count();
 
         return view('pages.user-dashboard',[
             'puprProgres' => $puprProgres,
@@ -107,48 +107,48 @@ class IndexDataController extends Controller
     //perumahan dan pertanahan
     public function indexHasilPerumahanPertanahan(){
         if (request()->ajax()) {
-            $query = HasilPembangunan::query()->where(['dinas'=>"perkimtan", 'bidang'=>'perumahan-pertanahan']);
+            $query = HasilPembangunan::query()->where(['dinas'=>"perkim", 'bidang'=>'perumahan-pertanahan']);
 
             return DataTables::of($query)
             
             ->make();
         }
-        return view('pages.user.perkimtan.pemukimanpertanahan.index-hasil');
+        return view('pages.user.perkim.pemukimanpertanahan.index-hasil');
     }
 
     public function indexProgressPerumahanPertanahan(){
         if (request()->ajax()) {
-            $query = ProgresKegiatan::query()->where(['dinas'=>"perkimtan", 'bidang'=>'perumahan-pertanahan']);
+            $query = ProgresKegiatan::query()->where(['dinas'=>"perkim", 'bidang'=>'perumahan-pertanahan']);
 
             return DataTables::of($query)
             
             
             ->make();
         }
-        return view('pages.user.perkimtan.pemukimanpertanahan.index-progress');
+        return view('pages.user.perkim.pemukimanpertanahan.index-progress');
     }
     //plpp
     public function indexHasilPLPP(){
         if (request()->ajax()) {
-            $query = HasilPembangunan::query()->where(['dinas'=>"perkimtan", 'bidang'=>'plpp']);
+            $query = HasilPembangunan::query()->where(['dinas'=>"perkim", 'bidang'=>'plpp']);
 
             return DataTables::of($query)
             
             ->make();
         }
-        return view('pages.user.perkimtan.plpp.index-hasil');
+        return view('pages.user.perkim.plpp.index-hasil');
     }
 
     public function indexProgressPLPP(){
         if (request()->ajax()) {
-            $query = ProgresKegiatan::query()->where(['dinas'=>"perkimtan", 'bidang'=>'plpp']);
+            $query = ProgresKegiatan::query()->where(['dinas'=>"perkim", 'bidang'=>'plpp']);
 
             return DataTables::of($query)
             
             
             ->make();
         }
-        return view('pages.user.perkimtan.plpp.index-progress');
+        return view('pages.user.perkim.plpp.index-progress');
     }
 
     //PERHUB

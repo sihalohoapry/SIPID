@@ -24,13 +24,13 @@ PUPR
                     <div class="page-hero page-container " id="page-hero">
                         <div class="padding d-flex pt-0">
                             <div class="page-title">
-                                <h2 class="text-md text-highlight">Progres Kegiatan di PLPP</h2>
-                                <small class="text-muted">Daftar list seluruh proses kegiatan</small>
+                                <h2 class="text-md text-highlight">Hasil Pembangunan di Bidang PLPP</h2>
+                                <small class="text-muted">Daftar list seluruh hasil kegiatan</small>
                             </div>
                             <div class="flex"></div>
                             <div>
-                                <a href="{{ route('create-progres-kegiatan', ["perkimtan","plpp"]) }}" class="btn btn-md text-muted">
-                                    <span class="d-none d-sm-inline mx-1">Tambah Proses</span>
+                                <a href="{{ route('create-hasil-kegiatan', ["perkim","plpp"]) }}" class="btn btn-md text-muted">
+                                    <span class="d-none d-sm-inline mx-1">Tambah Hasil</span>
                                     <i data-feather="arrow-right"></i>
                                 </a>
                             </div>
@@ -42,18 +42,13 @@ PUPR
                                 <table id="datatable" class="table table-theme table-row v-middle" >
                                     <thead>
                                         <tr>
-                                            <th><span class="text-muted">Nama Pekerjaan</span></th>
-                                            <th><span class="text-muted">Lokasi</span></th>
+                                            <th><span class="text-muted">Kegiatan</span></th>
                                             <th><span class="text-muted">Jenis</span></th>
                                             <th><span class="text-muted">Volume</span></th>
                                             <th><span class="text-muted">Sumber Dana</span></th>
-                                            <th><span class="text-muted">Nilai Pagu(Rp.)</span></th>
-                                            <th><span class="text-muted">Nilai Kontrak (Rp.)</span></th>
-                                            <th><span class="text-muted">Progres Fisik</span></th>
-                                            <th><span class="text-muted">Progres Keuangan</span></th>
-                                            <th><span class="text-muted">bulan</span></th>
-                                            <th><span class="text-muted">tahun</span></th>
-                                            <th><span class="text-muted">Keterangan</span></th>
+                                            <th><span class="text-muted">Pagu</span></th>
+                                            <th><span class="text-muted">Tahun</span></th>
+                                            <th><span class="text-muted">Kecamatan</span></th>
                                             <th><span class="text-muted">Aksi</span></th>
                                             
                                         </tr>
@@ -86,6 +81,8 @@ PUPR
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-perkim-plpp',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENYEHATAN LINGKUNGAN PERUMAHAN DAN PERMUKIMAN',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -93,7 +90,7 @@ PUPR
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-perkim-plpp',
-                title:' SIPID | PERKIM \n Data - data Progress Kegiatan Penyehatan Lingkungan Perumahan dan Pemukiman ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENYEHATAN LINGKUNGAN PERUMAHAN DAN PERMUKIMAN',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -108,21 +105,14 @@ PUPR
             ajax:{
                 url: '{!! url()->current() !!}',
             },
-            scrollX:true,
             columns:[
-                {data:'nama_pekerjaan', name: 'nama_pekerjaan',  "width": "400px"},
-                {data:'lokasi', name: 'lokasi'},
+                {data:'kegiatan', name: 'kegiatan'},
                 {data:'jenis', name: 'jenis'},
                 {data:'volume', name: 'volume'},
                 {data:'sumber_dana', name: 'sumber_dana'},
-                {data:'nilai_pagu', name: 'nilai_pagu'},
-                {data:'nilai_kontrak', name: 'nilai_kontrak'},
-                {data:'progres_fisik', name: 'progres_fisik'},
-                {data:'progres_keuangan', name: 'progres_keuangan'},
-                {data:'bulan', name: 'bulan'},
+                {data:'pagu', name: 'pagu', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
                 {data:'tahun', name: 'tahun'},
-                {data:'keterangan', name: 'keterangan'},
-
+                {data:'kecamatan', name: 'kecamatan'},
                 {
                     data: 'action',
                     name: 'action',

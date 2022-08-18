@@ -73,6 +73,8 @@ PUPR
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-pupr-cipta-karya',
+                title:' DATA HASIL PEMBANGUNAN BIDANG CIPTA KARYA ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5]
                 }
@@ -81,7 +83,7 @@ PUPR
                 extend: 'pdfHtml5',
                 title: $('h1').html(),
                 filename: 'data-progres-pupr-cipta-karya',
-                title:' SIPID | PUPR \n Data - data Hasil Pembangunan Bidang Cipta Karya ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG CIPTA KARYA ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5]
                 }

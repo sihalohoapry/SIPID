@@ -31,8 +31,8 @@ class HomeController extends Controller
         $perhubunganHasil = HasilPembangunan::where('dinas', 'perhubungan')->count();
         $lhProgres = ProgresKegiatan::where('dinas', 'dinas-lingkungan-hidup')->count();
         $lhHasil = HasilPembangunan::where('dinas', 'dinas-lingkungan-hidup')->count();
-        $perkimtanProgres = ProgresKegiatan::where('dinas', 'perkimtan')->count();
-        $perkimtanHasil = HasilPembangunan::where('dinas', 'perkimtan')->count();
+        $perkimtanProgres = ProgresKegiatan::where('dinas', 'perkim')->count();
+        $perkimtanHasil = HasilPembangunan::where('dinas', 'perkim')->count();
 
         return view('pages.dashboard',[
             'puprProgres' => $puprProgres,

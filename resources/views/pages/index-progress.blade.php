@@ -93,7 +93,7 @@ Progres
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-dlh-',
-                title:' SIPID | Dinas Lingkungan Hidup \n Data - data Progres Kegiatan Bidang Pengelolaan Sampah & Pertamanan ',
+                title:' DATA HASIL PROGRES KEGIATAN BIDANG Pengelolaan Sampah & Pertamanan ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -115,10 +115,10 @@ Progres
                 {data:'jenis', name: 'jenis'},
                 {data:'volume', name: 'volume'},
                 {data:'sumber_dana', name: 'sumber_dana'},
-                {data:'nilai_pagu', name: 'nilai_pagu'},
-                {data:'nilai_kontrak', name: 'nilai_kontrak'},
+                {data:'nilai_pagu', name: 'nilai_pagu', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
+                {data:'nilai_kontrak', name: 'nilai_kontrak', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
                 {data:'progres_fisik', name: 'progres_fisik'},
-                {data:'progres_keuangan', name: 'progres_keuangan'},
+                {data:'progres_keuangan', name: 'progres_keuangan', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
                 {data:'bulan', name: 'bulan'},
                 {data:'tahun', name: 'tahun'},
                 {data:'keterangan', name: 'keterangan'},

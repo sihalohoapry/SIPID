@@ -78,6 +78,8 @@ Dinas Lingkungan Hidup
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-dlh-',
+                title:' DATA HASIL PROGRES KEGIATAN BIDANG PENGOLAHAN SAMPAH & PERTAMANAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -85,7 +87,7 @@ Dinas Lingkungan Hidup
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-dlh-',
-                title:' SIPID | Dinas Lingkungan Hidup \n Data - data Progres Kegiatan Bidang Pengelolaan Sampah & Pertamanan ',
+                title:' DATA HASIL PROGRES KEGIATAN BIDANG PENGOLAHAN SAMPAH & PERTAMANAN ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -105,7 +107,7 @@ Dinas Lingkungan Hidup
                 {data:'volume', name: 'volume'},
                 {data:'sumber_dana', name: 'sumber_dana', "width": "150px"},
                 {data:'progres_fisik', name: 'progres_fisik', "width": "150px"},
-                {data:'progres_keuangan', name: 'progres_keuangan', "width": "150px"},
+                {data:'progres_keuangan', name: 'progres_keuangan', "width": "150px", render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
                 {data:'bulan', name: 'bulan'},
                 {data:'tahun', name: 'tahun'},
                 {data:'keterangan', name: 'keterangan', "width": "200px"},

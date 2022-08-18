@@ -81,6 +81,8 @@ Dinas LH
             buttons: [
             {
                 extend: 'excelHtml5',
+                filename: 'data-progres-dlh-',
+                title:' DATA HASIL HASIL PEMBANGUNAN BIDANG PENGELOLAAN SAMPAH & PERTAMANAN',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -88,7 +90,7 @@ Dinas LH
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-dlh-',
-                title:' SIPID | Dinas Lingkungan Hidup \n Data - data Hasil Kegiatan Bidang Pengelolaan Sampah & Pertamanan ',
+                title:' DATA HASIL HASIL PEMBANGUNAN BIDANG PENGELOLAAN SAMPAH & PERTAMANAN',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -108,7 +110,7 @@ Dinas LH
                 {data:'jenis', name: 'jenis'},
                 {data:'volume', name: 'volume'},
                 {data:'sumber_dana', name: 'sumber_dana'},
-                {data:'pagu', name: 'pagu'},
+                {data:'pagu', name: 'pagu', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
                 {data:'tahun', name: 'tahun'},
                 {data:'kecamatan', name: 'kecamatan'},
                 {
