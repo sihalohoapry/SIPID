@@ -82,28 +82,7 @@ PUPR
 <script>
     // $('#datatable').append('<caption style="caption-side: top">Data - data Progres Kegiatan bidang Bina Marga</caption>');
     var datatable = $('#datatable').DataTable({
-            dom: 'lBfrtip',
-            buttons: [
-            {
-                extend: 'excelHtml5',
-                filename: 'data-progres-puprbina-marga',
-                title:' DATA PROGRES KEGIATAN BIDANG BINA MARGA ',
-                exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
-                }
-            },
-            {
-                extend: 'pdfHtml5',
-                // messageTop: 'Data - data Progres Kegiatan Bidang Bina Marga',
-
-                title: $('h1').html(),
-                filename: 'data-progres-puprbina-marga',
-                title:' DATA PROGRES KEGIATAN BIDANG BINA MARGA ',
-                exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
-                },
-            },
-        ],
+           
             processing: true,
             serverSide:true,
             ordering:true,
@@ -132,7 +111,29 @@ PUPR
                     searcable: false,
                     width: '15%'
                 },
-            ]
+            ],
+            dom: 'lBfrtip',
+            buttons: [
+            {
+                extend: 'excelHtml5',
+                filename: 'data-progres-puprbina-marga',
+                title:' DATA PROGRES KEGIATAN BIDANG BINA MARGA ',
+                exportOptions: {
+                    columns: [ 0, 1, 2,3,4, 5,6, 7, 9 ]
+                }
+            },
+            {
+                extend: 'pdfHtml5',
+                // messageTop: 'Data - data Progres Kegiatan Bidang Bina Marga',
+
+                title: $('h1').html(),
+                filename: 'data-progres-puprbina-marga',
+                title:' DATA PROGRES KEGIATAN BIDANG BINA MARGA ',
+                exportOptions: {
+                    columns: [ 0, 1, 2,3,4, 5,6, 7, 9 ]
+                },
+            },
+        ],
         });
         
 </script>

@@ -89,7 +89,7 @@ PUPR
                 filename: 'data-progres-perkim-plpp',
                 title:' DATA PROGRES KEGIATAN BIDANG PENYEHATAN LINGKUNGAN PERUMAHAN DAN PERMUKIMAN',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7, 9 ]
                 }
             },
             {
@@ -97,7 +97,7 @@ PUPR
                 filename: 'data-progres-perkim-plpp',
                 title:' DATA PROGRES KEGIATAN BIDANG PENYEHATAN LINGKUNGAN PERUMAHAN DAN PERMUKIMAN',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7, 9 ]
                 }
             },
         ],

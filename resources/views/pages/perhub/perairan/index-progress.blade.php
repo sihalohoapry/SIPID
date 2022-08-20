@@ -89,7 +89,7 @@ Dinas Perhubungan
                 filename: 'data-progres-perhub-perairan',
                 title:' DATA PROGRES KEGIATAN BIDANG PERAIRAN ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6., 7 ]
+                    columns: [ 0, 1, 2,3,4, 5,6., 7 , 9 ]
                 }
             },
             {
@@ -97,7 +97,7 @@ Dinas Perhubungan
                 filename: 'data-progres-perhub-perairan',
                 title:' DATA PROGRES KEGIATAN BIDANG PERAIRAN ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6., 7 ]
+                    columns: [ 0, 1, 2,3,4, 5,6., 7 , 9 ]
                 }
             },
         ],
