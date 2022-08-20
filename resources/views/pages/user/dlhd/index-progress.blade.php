@@ -79,17 +79,17 @@ Dinas Lingkungan Hidup
             {
                 extend: 'excelHtml5',
                 filename: 'data-progres-dlh-',
-                title:' DATA HASIL PROGRES KEGIATAN BIDANG PENGOLAHAN SAMPAH & PERTAMANAN ',
+                title:' DATA PROGRES KEGIATAN BIDANG PENGOLAHAN SAMPAH & PERTAMANAN ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
                 }
             },
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-dlh-',
-                title:' DATA HASIL PROGRES KEGIATAN BIDANG PENGOLAHAN SAMPAH & PERTAMANAN ',
+                title:' DATA PROGRES KEGIATAN BIDANG PENGOLAHAN SAMPAH & PERTAMANAN ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
                 }
             },
         ],

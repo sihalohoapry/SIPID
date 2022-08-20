@@ -79,9 +79,9 @@ PUPR
             {
                 extend: 'excelHtml5',
                 filename: 'data-progres-puprbina-marga',
-                title:' DATA HASIL PROGRES KEGIATAN BIDANG BINA MARGA ',
+                title:' DATA PROGRES KEGIATAN BIDANG BINA MARGA ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
                 }
             },
             {
@@ -90,9 +90,9 @@ PUPR
 
                 title: $('h1').html(),
                 filename: 'data-progres-puprbina-marga',
-                title:' DATA HASIL PROGRES KEGIATAN BIDANG BINA MARGA ',
+                title:' DATA PROGRES KEGIATAN BIDANG BINA MARGA ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
                 },
             },
         ],

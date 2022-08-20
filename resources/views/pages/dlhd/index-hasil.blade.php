@@ -82,7 +82,7 @@ Dinas LH
             {
                 extend: 'excelHtml5',
                 filename: 'data-progres-dlh-',
-                title:' DATA HASIL HASIL PEMBANGUNAN BIDANG PENGELOLAAN SAMPAH & PERTAMANAN',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENGELOLAAN SAMPAH & PERTAMANAN',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }
@@ -90,7 +90,7 @@ Dinas LH
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-dlh-',
-                title:' DATA HASIL HASIL PEMBANGUNAN BIDANG PENGELOLAAN SAMPAH & PERTAMANAN',
+                title:' DATA HASIL PEMBANGUNAN BIDANG PENGELOLAAN SAMPAH & PERTAMANAN',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }

@@ -87,17 +87,17 @@ PUPR
             {
                 extend: 'excelHtml5',
                 filename: 'data-progres-pupr-pengairan',
-                title:' DATA HASIL PROGRES KEGIATAN BIDANG PENGAIRAN ',
+                title:' DATA PROGRES KEGIATAN BIDANG PENGAIRAN ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
                 }
             },
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-pupr-pengairan',
-                title:' DATA HASIL PROGRES KEGIATAN BIDANG PENGAIRAN ',
+                title:' DATA PROGRES KEGIATAN BIDANG PENGAIRAN ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
                 }
             },
         ],

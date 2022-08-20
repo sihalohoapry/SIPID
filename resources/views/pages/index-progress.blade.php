@@ -93,7 +93,7 @@ Progres
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-dlh-',
-                title:' DATA HASIL PROGRES KEGIATAN BIDANG Pengelolaan Sampah & Pertamanan ',
+                title:' DATA PROGRES KEGIATAN BIDANG Pengelolaan Sampah & Pertamanan ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }

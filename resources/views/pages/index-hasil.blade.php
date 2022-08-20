@@ -83,7 +83,7 @@ Hasil
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-dlh-',
-                title:' DATA HASIL HASIL PEMBANGUNAN BIDANG Bidang Pengelolaan Sampah & Pertamanan ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG Bidang Pengelolaan Sampah & Pertamanan ',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5,6 ]
                 }

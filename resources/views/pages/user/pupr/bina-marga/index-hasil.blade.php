@@ -74,7 +74,7 @@ PUPR
             {
                 extend: 'excelHtml5',
                 filename: 'data-hasil-puprbina-marga',
-                title:' DATA HASIL PEMBANGUNAN BIDANG BINA MARGA ',
+                title:' DATA HASIL PEMBANGUNAN BIDANG BINA MARGA',
                 exportOptions: {
                     columns: [ 0, 1, 2,3,4, 5 ]
                 }

@@ -87,17 +87,17 @@ PUPR
             {
                 extend: 'excelHtml5',
                 filename: 'data-progres-pupr-cipta-karya',
-                title:' DATA HASIL PROGRES KEGIATAN BIDANG CIPTA KARYA ',
+                title:' DATA PROGRES KEGIATAN BIDANG CIPTA KARYA ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
                 }
             },
             {
                 extend: 'pdfHtml5',
                 filename: 'data-progres-pupr-cipta-karya',
-                title:' DATA HASIL PROGRES KEGIATAN BIDANG CIPTA KARYA ',
+                title:' DATA PROGRES KEGIATAN BIDANG CIPTA KARYA ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
                 }
             },
         ],

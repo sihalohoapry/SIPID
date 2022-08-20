@@ -80,7 +80,7 @@ Dinas PERKIMTAN
                 filename: 'data-progres-perkim-perumahan-pertanahan',
                 title:' DATA PROGRES KEGIATAN BIDANG PERUMAHAN DAN PERTANAHAN ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
                 }
             },
             {
@@ -88,7 +88,7 @@ Dinas PERKIMTAN
                 filename: 'data-progres-perkim-perumahan-pertanahan',
                 title:' DATA PROGRES KEGIATAN BIDANG PERUMAHAN DAN PERTANAHAN ',
                 exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6 ]
+                    columns: [ 0, 1, 2,3,4, 5,6, 7 ]
                 }
             },
         ],
