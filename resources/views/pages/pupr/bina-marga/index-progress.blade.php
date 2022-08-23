@@ -40,6 +40,8 @@ PUPR
                         <div class="padding">
                             <div class="table-responsive">
                                 <table id="datatable" class="table table-theme table-row v-middle" >
+                                    {{-- <caption>Datatables example: Customisation of the print view window</caption> --}}
+                                    
                                     <thead>
                                         <tr>
                                             <th><span class="text-muted">Nama Pekerjaan</span></th>
@@ -81,60 +83,67 @@ PUPR
 
 <script>
     // $('#datatable').append('<caption style="caption-side: top">Data - data Progres Kegiatan bidang Bina Marga</caption>');
-    var datatable = $('#datatable').DataTable({
+    $(document).ready( function () {
+        var datatable = $('#datatable').DataTable({
            
-            processing: true,
-            serverSide:true,
-            ordering:true,
-            ajax:{
-                url: '{!! url()->current() !!}',
-            },
-            scrollX:true,
-            columns:[
-                {data:'nama_pekerjaan', name: 'nama_pekerjaan',  "width": "400px"},
-                {data:'lokasi', name: 'lokasi'},
-                {data:'jenis', name: 'jenis'},
-                {data:'volume', name: 'volume'},
-                {data:'sumber_dana', name: 'sumber_dana'},
-                {data:'nilai_pagu', name: 'nilai_pagu', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
-                {data:'nilai_kontrak', name: 'nilai_kontrak', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
-                {data:'progres_fisik', name: 'progres_fisik'},
-                {data:'progres_keuangan', name: 'progres_keuangan', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
-                {data:'bulan', name: 'bulan'},
-                {data:'tahun', name: 'tahun'},
-                {data:'keterangan', name: 'keterangan'},
+           processing: true,
+           serverSide:true,
+           ordering:true,
+           ajax:{
+               url: '{!! url()->current() !!}',
+           },
+           scrollX:true,
+           columns:[
+               {data:'nama_pekerjaan', name: 'nama_pekerjaan',  "width": "400px"},
+               {data:'lokasi', name: 'lokasi'},
+               {data:'jenis', name: 'jenis'},
+               {data:'volume', name: 'volume'},
+               {data:'sumber_dana', name: 'sumber_dana'},
+               {data:'nilai_pagu', name: 'nilai_pagu', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
+               {data:'nilai_kontrak', name: 'nilai_kontrak', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
+               {data:'progres_fisik', name: 'progres_fisik'},
+               {data:'progres_keuangan', name: 'progres_keuangan', render: $.fn.dataTable.render.number( '.', ',', 0, 'Rp ' )},
+               {data:'bulan', name: 'bulan'},
+               {data:'tahun', name: 'tahun'},
+               {data:'keterangan', name: 'keterangan'},
 
-                {
-                    data: 'action',
-                    name: 'action',
-                    orderable: false,
-                    searcable: false,
-                    width: '15%'
-                },
-            ],
-            dom: 'lBfrtip',
-            buttons: [
-            {
-                extend: 'excelHtml5',
-                filename: 'data-progres-puprbina-marga',
-                title:' DATA PROGRES KEGIATAN BIDANG BINA MARGA ',
-                exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6, 7, 9 ]
-                }
-            },
-            {
-                extend: 'pdfHtml5',
-                // messageTop: 'Data - data Progres Kegiatan Bidang Bina Marga',
+               {
+                   data: 'action',
+                   name: 'action',
+                   orderable: false,
+                   searcable: false,
+                   width: '15%'
+               },
+           ],
+            
+           dom: 'lBfrtip',
+           buttons: [
+           {
+               extend: 'excelHtml5',
+               filename: 'data-progres-puprbina-marga',
+               title:' DATA PROGRES KEGIATAN BIDANG BINA MARGA ',
+               exportOptions: {
+                   columns: [ 0, 1, 2,3,4, 5,6, 7, 9 ]
+               }
+           },
+           {
+               extend: 'pdfHtml5',
+               filename: 'data-progres-puprbina-marga',
+               title:' DATA PROGRES KEGIATAN BIDANG BINA MARGA ',
+               exportOptions: {
+                   columns: [ 0, 1, 2,3,4, 5,6, 7, 9 ]
+               },
+               
+           },
+       ],
+       });
 
-                title: $('h1').html(),
-                filename: 'data-progres-puprbina-marga',
-                title:' DATA PROGRES KEGIATAN BIDANG BINA MARGA ',
-                exportOptions: {
-                    columns: [ 0, 1, 2,3,4, 5,6, 7, 9 ]
-                },
-            },
-        ],
-        });
+
+    })
+
+    
+
+        
         
 </script>
 
