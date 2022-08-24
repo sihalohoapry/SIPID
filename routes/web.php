@@ -28,7 +28,7 @@ Route::match(["GET", "POST"], "/register", function () {
     return redirect("/login");
 })->name("register");
 
-/// TITLE WEBSITE DIEDIT SEMUA
+/// global progres kegiatan -> hasil pembangunan ganti ke progres
 
 Route::get('/import-data-progres', [GlobalController::class,'importForm'])->name('import-data-progres')->middleware(['auth','admin']);
 Route::post('/post-data-progres', [GlobalController::class,'importPost'])->name('post-data-progres')->middleware(['auth','admin']);

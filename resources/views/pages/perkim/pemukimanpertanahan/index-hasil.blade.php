@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('title')
-Dinas Perhubungan
+Dinas PERKIM
 @endsection
 @push('addon-script')
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">

@@ -1,6 +1,6 @@
 @extends('layouts.user')
 @section('title')
-Dinas PERKIMTAN
+Dinas PERKIM
 @endsection
 @push('addon-script')
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">
